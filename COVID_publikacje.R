@@ -5,57 +5,73 @@ install.packages("easyPubMed")
 # Load easyPubMed package
 library(easyPubMed)
 
-# Retrive article through author 
-try({
-  my_query <- "Bartosz Nowak[AU]"
-  my_query <- get_pubmed_ids(pubmed_query_string = my_query)
-  my_data <- fetch_pubmed_data(my_query, encoding = "ASCII")
-  listed_articles <- articles_to_list(my_data)
-  custom_grep(listed_articles[[2]], "ArticleTitle", "char")}, silent = TRUE)
-
-# Retrive sets of articles regarding COVID 19 from january to july 2020
-ml_query <- "COVID 19[TIAB] AND 2020/01:2020/06[DP]"
+# Retrieve sets of articles regarding COVID 19 from 31th December to July 2020
+ml_query <- "COVID 19 OR novel coronavirus OR
+coronavirus Wuhan OR SARS-CoV-2[TIAB]  AND 2019/12/31:2020/07/01[DP]"
 out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 180)
 readLines(out1[1])[1:30]
 out1
 
-# Retrive number of all publicatons regarding COVID 19 from january to july 2020
+# Retrieve number of all publications regarding COVID 19 from from 31th December to July 2020
 try({
- covid_querry_all <- get_pubmed_ids("COVID 19[TIAB] AND 2020/01/01:2020/06/27[DP]")
+ covid_querry_all <- get_pubmed_ids("COVID 19 OR novel coronavirus OR
+coronavirus Wuhan OR SARS-CoV-2[TIAB]  AND 2019/12/31:2020/07/01[DP]")
   print(covid_querry_all$Count)
 }, silent = TRUE)
 
-# Retrive number of all journal articles with abstract regarding COVID 19 from january to july 2020
+# Retrieve number of all journal articles with abstract regarding COVID 19 from 31th December to July 2020
 try({
-  covid_querry_journal <- get_pubmed_ids("COVID 19[TIAB] AND 2020/01/01:2020/06/27[DP]
+  covid_querry_journal <- get_pubmed_ids("COVID 19 OR novel coronavirus OR
+coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/07/01[DP] AND
        Journal Article[PT] ")
   print(covid_querry_journal$Count)
 }, silent = TRUE)
 
-# Retrive number of review articles regarding COVID 19 from january to july 2020
+# Retrieve number of review articles regarding COVID 19 from 31th December to July 2020
 try({
-  covid_querry_review <- get_pubmed_ids("COVID 19[TIAB] AND 2020/01/01:2020/06/27[DP]
+  covid_querry_review <- get_pubmed_ids("COVID 19 OR novel coronavirus OR
+coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/07/01[DP] AND
        Review[PT] ")
   print(covid_querry_review$Count)
  }, silent = TRUE)
 
-# Retrive number of meta_analysis articles regarding COVID 19 from january to july 2020
+# Retrieve number of meta_analysis articles regarding COVID 19 from 31th December to July 2020
 try({
-  covid_querry_meta <- get_pubmed_ids("COVID 19[TIAB] AND 2020/01/01:2020/06/27[DP]
+  covid_querry_meta <- get_pubmed_ids("COVID 19 OR novel coronavirus OR
+coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/07/01[DP] AND
        Meta-Analysis[PT] ")
   print(covid_querry_meta$Count)
 }, silent = TRUE)
 
-# Retrive number of guideline articles regarding COVID 19 from january to july 2020
+# Retrieve number of guideline articles regarding COVID 19 from 31th December to July 2020
 try({
-  covid_querry_guide <- get_pubmed_ids("COVID 19[TIAB] AND 2020/01/01:2020/06/27[DP]
+  covid_querry_guide <- get_pubmed_ids("COVID 19 OR novel coronavirus OR
+coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/07/01[DP] AND
        Guideline[PT]")
   print(covid_querry_guide$Count)
 }, silent = TRUE)
 
-ml_query <- "COVID 19[TIAB] AND 2020/01/01:2020/06/27[DP]
+
+
+ml_query <- "COVID 19 OR novel coronavirus OR
+coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/07/01[DP]
         AND Meta-Analysis[PT] "
-out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 180,dest_dir=
-      "D:/Data_R_Meta", format = "xml")
+out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 180,
+                                dest_dir = NULL, format = "xml")
 readLines(out1[1])[1:30]
 out1
+
+a <- table_articles_byAuth(out1,included_authors = "all",
+                      max_chars = 500,autofill = TRUE,dest_file = "D:/Data_R_Meta/Dane_meta.rds",getKeywords = FALSE,encoding = "UTF8")
+a
+library(tidyverse)
+str(a)
+
+
+b <- as_tibble(a)
+b
+
+
+c <- b %>%
+  select(-abstract, -keywords,-email)
+c
