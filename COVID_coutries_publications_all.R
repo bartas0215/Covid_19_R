@@ -1,17 +1,16 @@
-###sample script - country analysis####
+### Script - country analysis_all publications####
 library(tidyverse)
 library(easyPubMed)
 #Download data about Coronavirus COVID 19 meta analysis
 ml_query <- "COVID 19 OR novel coronavirus OR
-coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]
-        AND Meta-Analysis[PT] "
+coronavirus Wuhan OR SARS-CoV-2[TIAB]  AND 2019/12/31:2020/06/30[DP]"
 out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 180,
-        dest_dir = NULL, format = "xml")
+                              dest_dir = NULL, format = "xml")
 readLines(out1[1])[1:30]
 
 # Save downloaded data as df regarding publication authors
 a <- table_articles_byAuth(out1,included_authors = "all",
-     max_chars = 500,autofill = TRUE,dest_file = "D:/Data_R_Meta/Dane_meta.rds",getKeywords = FALSE,encoding = "UTF8")
+                           max_chars = 500,autofill = TRUE,dest_file = "D:/Data_R_Meta/Dane_meta.rds",getKeywords = FALSE,encoding = "UTF8")
 
 # Check structure of the data 
 str(a)
@@ -62,6 +61,3 @@ i <- as_tibble(h)
 i <- i %>%
   arrange(desc(freq))
 i
-
-
-

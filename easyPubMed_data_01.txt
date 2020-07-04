@@ -11,8 +11,8 @@
         </DateCompleted>
         <DateRevised>
             <Year>2020</Year>
-            <Month>06</Month>
-            <Day>29</Day>
+            <Month>07</Month>
+            <Day>01</Day>
         </DateRevised>
         <Article PubModel="Electronic-eCollection">
             <Journal>
@@ -182,7 +182,304 @@
             <ArticleId IdType="pubmed">32578683</ArticleId>
             <ArticleId IdType="pii">S0036-46652020000100223</ArticleId>
             <ArticleId IdType="doi">10.1590/S1678-9946202062043</ArticleId>
+            <ArticleId IdType="pmc">PMC7310609</ArticleId>
         </ArticleIdList>
+        <ReferenceList>
+            <Reference>
+                <Citation>JAMA. 2020 Mar 3;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32125362</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA Intern Med. 2020 Mar 13;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32167524</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Kidney Int. 2020 May;97(5):829-838</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32247631</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Clin Infect Dis. 2020 Feb 29;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32109279</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Nat Microbiol. 2020 Apr;5(4):536-544</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32123347</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Feb 15;395(10223):497-506</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">31986264</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Feb 15;395(10223):507-513</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32007143</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Am J Respir Crit Care Med. 2020 Jun 1;201(11):1372-1379</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32242738</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Feb 15;395(10223):514-523</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">31986261</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Am Thorac Soc. 2020 Apr 7;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32255382</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur Radiol. 2020 Apr 11;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32279115</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Travel Med Infect Dis. 2020 Feb 27;:101606</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32114074</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur J Nucl Med Mol Imaging. 2020 May;47(5):1275-1280</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32107577</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA Cardiol. 2020 Mar 27;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32219356</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Am J Nephrol. 2020;51(5):343-348</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32229732</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Formos Med Assoc. 2020 Apr 16;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32317205</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Clin Infect Dis. 2020 Mar 16;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32176772</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur Respir J. 2020 Jun 4;55(6):</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32269086</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 2020 Apr 30;382(18):1708-1720</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32109013</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>EClinicalMedicine. 2020 Apr 5;:100331</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32292899</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Allergy. 2020 Feb 19;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32077115</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Mar 28;395(10229):1054-1062</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32171076</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Immunol. 2017 May 15;198(10):4046-4053</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">28373583</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Infect. 2020 Apr;80(4):388-393</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32112884</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 2020 Feb 19;368:m606</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32075786</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Am J Respir Crit Care Med. 2020 Jun 1;201(11):1380-1388</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32275452</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2020 Apr 6;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32250385</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Virol. 2020 Jun;127:104364</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32311650</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Invest Radiol. 2020 Jun;55(6):327-331</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32118615</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Clin Infect Dis. 2020 Apr 02;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32239127</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Korean Med Sci. 2020 Mar 30;35(12):e132</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32233161</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>MMWR Morb Mortal Wkly Rep. 2020 Apr 03;69(13):382-386</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32240123</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Respir Med. 2020 Apr;8(4):e20</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32171067</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>PLoS One. 2020 Mar 19;15(3):e0230548</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32191764</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Gerontol A Biol Sci Med Sci. 2020 Apr 11;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32279081</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 2020 Mar 26;368:m1091</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32217556</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Int J Infect Dis. 2016 Aug;49:129-33</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">27352628</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2020 Feb 7;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32031570</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2020 Apr 22;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32320003</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Int J Infect Dis. 2020 May;94:91-95</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32173574</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Sci China Life Sci. 2020 Mar;63(3):364-374</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32048163</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Infect. 2020 Jun;80(6):639-645</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32240670</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Monaldi Arch Chest Dis. 2020 Apr 10;90(1):</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32290644</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur Respir J. 2020 May 14;55(5):</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32217650</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Clin Infect Dis. 2020 Mar 16;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32173725</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Osong Public Health Res Perspect. 2020 Apr;11(2):85-90</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32257774</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Respir Med. 2020 May;8(5):475-481</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32105632</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ Evid Based Med. 2018 Jun;23(3):84-86</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">29650725</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Chin Med J (Engl). 2020 May 5;133(9):1025-1031</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32044814</ArticleId>
+                </ArticleIdList>
+            </Reference>
+        </ReferenceList>
     </PubmedData>
 </PubmedArticle>
 
@@ -1195,6 +1492,977 @@
         <ArticleIdList>
             <ArticleId IdType="pubmed">32553061</ArticleId>
             <ArticleId IdType="doi">10.2807/1560-7917.ES.2020.25.23.2000980</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">32552872</PMID>
+        <DateCompleted>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>03</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>03</Day>
+        </DateRevised>
+        <Article PubModel="Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1466-609X</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>24</Volume>
+                    <Issue>1</Issue>
+                    <PubDate>
+                        <Year>2020</Year>
+                        <Month>06</Month>
+                        <Day>18</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Critical care (London, England)</Title>
+                <ISOAbbreviation>Crit Care</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Prevalence and impact of acute renal impairment on COVID-19: a systematic review and meta-analysis.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>356</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1186/s13054-020-03065-4</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND">The aim of this study is to assess the prevalence of abnormal urine analysis and kidney dysfunction in COVID-19 patients and to determine the association of acute kidney injury (AKI) with the severity and prognosis of COVID-19 patients.</AbstractText>
+                <AbstractText Label="METHODS">The electronic database of Embase and PubMed were searched for relevant studies. A meta-analysis of eligible studies that reported the prevalence of abnormal urine analysis and kidney dysfunction in COVID-19 was performed. The incidences of AKI were compared between severe versus non-severe patients and survivors versus non-survivors.</AbstractText>
+                <AbstractText Label="RESULTS">A total of 24 studies involving 4963 confirmed COVID-19 patients were included. The proportions of patients with elevation of sCr and BUN levels were 9.6% (95% CI 5.7-13.5%) and 13.7% (95% CI 5.5-21.9%), respectively. Of all patients, 57.2% (95% CI 40.6-73.8%) had proteinuria, 38.8% (95% CI 26.3-51.3%) had proteinuria +, and 10.6% (95% CI 7.9-13.3%) had proteinuria ++ or +++. The overall incidence of AKI in all COVID-19 patients was 4.5% (95% CI 3.0-6.0%), while the incidence of AKI was 1.3% (95% CI 0.2-2.4%), 2.8% (95% CI 1.4-4.2%), and 36.4% (95% CI 14.6-58.3%) in mild or moderate cases, severe cases, and critical cases, respectively. Meanwhile, the incidence of AKI was 52.9%(95% CI 34.5-71.4%), 0.7% (95% CI - 0.3-1.8%) in non-survivors and survivors, respectively. Continuous renal replacement therapy (CRRT) was required in 5.6% (95% CI 2.6-8.6%) severe patients, 0.1% (95% CI - 0.1-0.2%) non-severe patients and 15.6% (95% CI 10.8-20.5%) non-survivors and 0.4% (95% CI - 0.2-1.0%) survivors, respectively.</AbstractText>
+                <AbstractText Label="CONCLUSION">The incidence of abnormal urine analysis and kidney dysfunction in COVID-19 was high and AKI is closely associated with the severity and prognosis of COVID-19 patients. Therefore, it is important to increase awareness of kidney dysfunction in COVID-19 patients.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Yang</LastName>
+                    <ForeName>Xianghong</ForeName>
+                    <Initials>X</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Critical Care Medicine, Zhejiang Provincial People's Hospital, Hangzhou Medical College, Hangzhou, 310014, Zhejiang, People's Republic of China. jyy623@163.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jin</LastName>
+                    <ForeName>Yiyang</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>College of Letters &amp; Science, University of California, Berkeley, Berkeley, CA, 94720, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>Ranran</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Critical Care Medicine, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, 200025, People's Republic of China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Zhongheng</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Emergency Medicine, Sir Run Run Shaw Hospital, Zhejiang University School of Medicine, Hangzhou, 310016, Zhejiang, People's Republic of China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sun</LastName>
+                    <ForeName>Renhua</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Critical Care Medicine, Zhejiang Provincial People's Hospital, Hangzhou Medical College, Hangzhou, 310014, Zhejiang, People's Republic of China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Dechang</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Critical Care Medicine, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, 200025, People's Republic of China. 18918520002@189.cn.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Critical Care Medicine, Ruijin North Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, 201800, People's Republic of China. 18918520002@189.cn.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>2019C03024</GrantID>
+                    <Agency>Key Research and Development Plan of Zhejiang province</Agency>
+                    <Country>International</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>2017ZD002</GrantID>
+                    <Agency>Zhejiang Medical and Health Technology Platform Project</Agency>
+                    <Country>International</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D017418">Meta-Analysis</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+                <PublicationType UI="D000078182">Systematic Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2020</Year>
+                <Month>06</Month>
+                <Day>18</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Crit Care</MedlineTA>
+            <NlmUniqueID>9801902</NlmUniqueID>
+            <ISSNLinking>1364-8535</ISSNLinking>
+        </MedlineJournalInfo>
+        <SupplMeshList>
+            <SupplMeshName Type="Disease" UI="C000657245">COVID-19</SupplMeshName>
+            <SupplMeshName Type="Organism" UI="C000656484">severe acute respiratory syndrome coronavirus 2</SupplMeshName>
+        </SupplMeshList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D058186" MajorTopicYN="N">Acute Kidney Injury</DescriptorName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+                <QualifierName UI="Q000652" MajorTopicYN="N">urine</QualifierName>
+                <QualifierName UI="Q000821" MajorTopicYN="Y">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000073640" MajorTopicYN="Y">Betacoronavirus</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D018352" MajorTopicYN="N">Coronavirus Infections</DescriptorName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+                <QualifierName UI="Q000652" MajorTopicYN="N">urine</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D058873" MajorTopicYN="N">Pandemics</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011024" MajorTopicYN="N">Pneumonia, Viral</DescriptorName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+                <QualifierName UI="Q000652" MajorTopicYN="N">urine</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015995" MajorTopicYN="N">Prevalence</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="Y">2019-nCoV</Keyword>
+            <Keyword MajorTopicYN="Y">Acute kidney injury</Keyword>
+            <Keyword MajorTopicYN="Y">Continuous renal replacement therapy</Keyword>
+            <Keyword MajorTopicYN="Y">Meta-analysis</Keyword>
+            <Keyword MajorTopicYN="Y">Renal impairment</Keyword>
+            <Keyword MajorTopicYN="Y">SARS-CoV-2</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2020</Year>
+                <Month>04</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2020</Year>
+                <Month>06</Month>
+                <Day>04</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2020</Year>
+                <Month>6</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2020</Year>
+                <Month>6</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2020</Year>
+                <Month>7</Month>
+                <Day>4</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">32552872</ArticleId>
+            <ArticleId IdType="doi">10.1186/s13054-020-03065-4</ArticleId>
+            <ArticleId IdType="pii">10.1186/s13054-020-03065-4</ArticleId>
+            <ArticleId IdType="pmc">PMC7300374</ArticleId>
+        </ArticleIdList>
+        <ReferenceList>
+            <Reference>
+                <Citation>Am J Nephrol. 2020;51(5):343-348</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32229732</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Pharmacol Res. 2016 Mar;105:74-83</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">26776964</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Mar 28;395(10229):1054-1062</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32171076</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Crit Care. 2020 Apr 30;24(1):188</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32354360</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 2020 Jun 11;382(24):2372-2374</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32302078</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Kidney Int. 2020 May;97(5):824-828</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32204907</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Kidney Int. 2020 Apr 9;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32327202</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Feb 15;395(10223):497-506</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">31986264</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Sci China Life Sci. 2020 Mar;63(3):364-374</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32048163</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2020 Mar 19;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32191259</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Feb 15;395(10223):507-513</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32007143</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Respir Med. 2020 May;8(5):475-481</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32105632</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Med Virol. 2020 Jul;92(7):797-806</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32198776</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 2003 Sep 6;327(7414):557-60</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12958120</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMC Infect Dis. 2020 Apr 29;20(1):311</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32345226</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>QJM. 2020 Mar 17;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32181807</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Diagnosis (Berl). 2020 May 26;7(2):91-96</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32352401</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Travel Med Infect Dis. 2020 Feb 27;:101606</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32114074</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Infect. 2020 Apr;80(4):388-393</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32112884</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Nature. 2003 Nov 27;426(6965):450-4</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">14647384</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMC Med Res Methodol. 2014 Dec 19;14:135</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">25524443</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 2020 Feb 19;368:m606</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32075786</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Clin Infect Dis. 2020 May 03;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32361738</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Am Soc Nephrol. 2020 Jun;31(6):1157-1165</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32345702</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Intensive Care Med. 2020 Jun;46(6):1114-1116</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32236644</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Infect. 2020 May;80(5):e1-e6</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32171869</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA Cardiol. 2020 Mar 25;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32211816</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2020 Feb 7;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32031570</ArticleId>
+                </ArticleIdList>
+            </Reference>
+        </ReferenceList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">32546191</PMID>
+        <DateCompleted>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>03</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>03</Day>
+        </DateRevised>
+        <Article PubModel="Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1466-609X</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>24</Volume>
+                    <Issue>1</Issue>
+                    <PubDate>
+                        <Year>2020</Year>
+                        <Month>06</Month>
+                        <Day>16</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Critical care (London, England)</Title>
+                <ISOAbbreviation>Crit Care</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Incidence of acute kidney injury in COVID-19 infection: a systematic review and meta-analysis.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>346</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1186/s13054-020-03009-y</ELocationID>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Yih-Ting</ForeName>
+                    <Initials>YT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Nephrology, Chang Gung Memorial Hospital, Keelung, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Shao</LastName>
+                    <ForeName>Shih-Chieh</ForeName>
+                    <Initials>SC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>School of Pharmacy, Institute of Clinical Pharmacy and Pharmaceutical Sciences, College of Medicine, National Cheng Kung University, Tainan, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Pharmacy, Chang Gung Memorial Hospital, Keelung, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hsu</LastName>
+                    <ForeName>Cheng-Kai</ForeName>
+                    <Initials>CK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Nephrology, Chang Gung Memorial Hospital, Keelung, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wu</LastName>
+                    <ForeName>I-Wen</ForeName>
+                    <Initials>IW</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Nephrology, Chang Gung Memorial Hospital, Keelung, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>College of Medicine, Chang Gung University, Taoyuan, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hung</LastName>
+                    <ForeName>Ming-Jui</ForeName>
+                    <Initials>MJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>College of Medicine, Chang Gung University, Taoyuan, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Section of Cardiology, Department of Internal Medicine, Chang Gung Memorial Hospital, Keelung, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Yung-Chang</ForeName>
+                    <Initials>YC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Nephrology, Chang Gung Memorial Hospital, Keelung, Taiwan. cyc2356@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Kidney Research Center, Department of Nephrology, Chang Gung Memorial Hospital, Linkou, Taiwan. cyc2356@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Community Medicine Research Center, Chang Gung Memorial Hospital, Keelung, Taiwan. cyc2356@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Division of Nephrology, Department of Medicine, Chang Gung Memorial Hospital, No. 222, Maijin Rd., Anle Dist., Keelung, Taiwan. cyc2356@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016422">Letter</PublicationType>
+                <PublicationType UI="D017418">Meta-Analysis</PublicationType>
+                <PublicationType UI="D000078182">Systematic Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2020</Year>
+                <Month>06</Month>
+                <Day>16</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Crit Care</MedlineTA>
+            <NlmUniqueID>9801902</NlmUniqueID>
+            <ISSNLinking>1364-8535</ISSNLinking>
+        </MedlineJournalInfo>
+        <SupplMeshList>
+            <SupplMeshName Type="Disease" UI="C000657245">COVID-19</SupplMeshName>
+            <SupplMeshName Type="Organism" UI="C000656484">severe acute respiratory syndrome coronavirus 2</SupplMeshName>
+        </SupplMeshList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D058186" MajorTopicYN="N">Acute Kidney Injury</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="N">diagnosis</QualifierName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000073640" MajorTopicYN="Y">Betacoronavirus</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D018352" MajorTopicYN="N">Coronavirus Infections</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="N">diagnosis</QualifierName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015994" MajorTopicYN="N">Incidence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D058873" MajorTopicYN="N">Pandemics</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011024" MajorTopicYN="N">Pneumonia, Viral</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="N">diagnosis</QualifierName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="Y">Acute kidney injury</Keyword>
+            <Keyword MajorTopicYN="Y">COVID-19</Keyword>
+            <Keyword MajorTopicYN="Y">Incidence</Keyword>
+            <Keyword MajorTopicYN="Y">Meta-analysis</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2020</Year>
+                <Month>05</Month>
+                <Day>13</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2020</Year>
+                <Month>05</Month>
+                <Day>20</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2020</Year>
+                <Month>6</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2020</Year>
+                <Month>6</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2020</Year>
+                <Month>7</Month>
+                <Day>4</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">32546191</ArticleId>
+            <ArticleId IdType="doi">10.1186/s13054-020-03009-y</ArticleId>
+            <ArticleId IdType="pii">10.1186/s13054-020-03009-y</ArticleId>
+            <ArticleId IdType="pmc">PMC7296284</ArticleId>
+        </ArticleIdList>
+        <ReferenceList>
+            <Reference>
+                <Citation>Int J Infect Dis. 2020 May;94:81-87</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32205284</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 2020 Apr 30;382(18):1708-1720</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32109013</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Virol. 2020 Jun;127:104364</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32311650</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Intensive Care Med. 2020 Apr;46(4):586-590</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32125455</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ren Fail. 2020 Nov;42(1):393-397</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32340507</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Nat Rev Nephrol. 2020 Jun;16(6):308-310</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32273593</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Feb 15;395(10223):497-506</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">31986264</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Kidney Int. 2020 Jun;97(6):1083-1088</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32354634</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2020 Mar 19;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32191259</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Respir Med. 2020 May;8(5):475-481</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32105632</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA Cardiol. 2020 Mar 27;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32219356</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Am J Nephrol. 2020;51(5):343-348</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32229732</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>EClinicalMedicine. 2020 Apr 5;:100331</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32292899</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Kidney Int. 2020 Jun;97(6):1076-1082</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32354637</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Mar 28;395(10229):1054-1062</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32171076</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Nat Rev Nephrol. 2018 Oct;14(10):607-625</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">30135570</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Crit Care. 2020 Apr 30;24(1):188</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32354360</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Kidney Int. 2020 May;97(5):829-838</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32247631</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Kidney Int. 2020 May;97(5):824-828</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32204907</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Chest. 2010 Oct;138(4):825-32</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">20435657</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 2020 Mar 26;368:m1091</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32217556</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA Cardiol. 2020 Mar 25;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32211816</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2020 Feb 7;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32031570</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2020 Apr 22;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32320003</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Feb 15;395(10223):507-513</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32007143</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Chin Med J (Engl). 2020 Jun 5;133(11):1261-1267</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32209890</ArticleId>
+                </ArticleIdList>
+            </Reference>
+        </ReferenceList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">32542429</PMID>
+        <DateCompleted>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>01</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>01</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1559-0100</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>68</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2020</Year>
+                        <Month>06</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Endocrine</Title>
+                <ISOAbbreviation>Endocrine</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Worldwide ACE (I/D) polymorphism may affect COVID-19 recovery rate: an ecological meta-regression.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>479-484</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/s12020-020-02381-7</ELocationID>
+            <Abstract>
+                <AbstractText>With the emergence of the Novel Coronavirus (2019-nCoV), researchers worldwide have started detecting the probable pathogenesis of the disease. The renin-angiotensin system (RAS) and angiotensin-converting enzymes have received a good deal of attention as possible pathways involved in 2019-nCoV pathogenesis. As the experiments seeking to find potential medications acting on these pathways are being conducted in the early phases, having an ecological worldview on the relationship between the prevalence of COVID-19 disease and the genetic differences in the genes involved in the RAS system could be valuable for the field. In this regard, we conducted a meta-analysis study of the prevalence of ACE (I/D) genotype in countries most affected by the COVID-19. In the meta-analysis, 48,758 healthy subjects from 30 different countries were evaluated in 116 studies, using the Comprehensive Meta-analysis software. The I/D allele frequency ratio was pooled by a random-effect model. The COVID-19 prevalence data of death and recovery rates were evaluated as the latitudes for the meta-regression analysis. Our results demonstrated that with the increase of the I/D allele frequency ratio, the recovery rate significantly increased (point estimate: 0.48, CI 95%: 0.05-0.91, p = 0.027). However, there was no significant difference in the case of death rate (point estimate: 1.74, CI 95%: 4.5-1.04, p = 0.22). This ecological perspective coupled with many limitations does not provide a direct clinical relevance between the COVID-19 and RAS system, but it shows potential pathophysiological associations. Our results raise concerns about ethnic and genetic differences that could affect the effectiveness of the currently investigated RAS-associated medications in different regions.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Hatami</LastName>
+                    <ForeName>Naser</ForeName>
+                    <Initials>N</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Student Research Committee, Jahrom University of Medical Sciences, Jahrom, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ahi</LastName>
+                    <ForeName>Salma</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Research Center for Noncommunicable Diseases, Faculty of Medicine, Jahrom University of Medical Sciences, Jahrom, Iran. Salmaahi.61@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sadeghinikoo</LastName>
+                    <ForeName>Alireza</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Sports Medicine Center, Oxygen Sports Group, Tehran, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Foroughian</LastName>
+                    <ForeName>Mahdi</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of emergency medicine, Faculty of Medicine, Mashhad University of medical sciences, Mashhad, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Javdani</LastName>
+                    <ForeName>Farshid</ForeName>
+                    <Initials>F</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Student Research Committee, Jahrom University of Medical Sciences, Jahrom, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kalani</LastName>
+                    <ForeName>Navid</ForeName>
+                    <Initials>N</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Research center for social Determinants of Health, Jahrom University of Medical Sciences, Jahrom, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fereydoni</LastName>
+                    <ForeName>Mostafa</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Student Research Committee, Jahrom University of Medical Sciences, Jahrom, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Keshavarz</LastName>
+                    <ForeName>Pouyan</ForeName>
+                    <Initials>P</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Student Research Committee, Jahrom University of Medical Sciences, Jahrom, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hosseini</LastName>
+                    <ForeName>Ava</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Student Research Committee, Jahrom University of Medical Sciences, Jahrom, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D017418">Meta-Analysis</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2020</Year>
+                <Month>06</Month>
+                <Day>15</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Endocrine</MedlineTA>
+            <NlmUniqueID>9434444</NlmUniqueID>
+            <ISSNLinking>1355-008X</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>EC 3.4.15.1</RegistryNumber>
+                <NameOfSubstance UI="D007703">Peptidyl-Dipeptidase A</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>EC 3.4.17.-</RegistryNumber>
+                <NameOfSubstance UI="C413524">angiotensin converting enzyme 2</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <SupplMeshList>
+            <SupplMeshName Type="Disease" UI="C000657245">COVID-19</SupplMeshName>
+            <SupplMeshName Type="Organism" UI="C000656484">severe acute respiratory syndrome coronavirus 2</SupplMeshName>
+        </SupplMeshList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000073640" MajorTopicYN="Y">Betacoronavirus</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D018352" MajorTopicYN="N">Coronavirus Infections</DescriptorName>
+                <QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName>
+                <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005787" MajorTopicYN="N">Gene Frequency</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D020022" MajorTopicYN="N">Genetic Predisposition to Disease</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D058873" MajorTopicYN="N">Pandemics</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007703" MajorTopicYN="N">Peptidyl-Dipeptidase A</DescriptorName>
+                <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011024" MajorTopicYN="N">Pneumonia, Viral</DescriptorName>
+                <QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName>
+                <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011110" MajorTopicYN="N">Polymorphism, Genetic</DescriptorName>
+                <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012084" MajorTopicYN="N">Renin-Angiotensin System</DescriptorName>
+                <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2020</Year>
+                <Month>04</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2020</Year>
+                <Month>06</Month>
+                <Day>01</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2020</Year>
+                <Month>6</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2020</Year>
+                <Month>7</Month>
+                <Day>2</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2020</Year>
+                <Month>6</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">32542429</ArticleId>
+            <ArticleId IdType="doi">10.1007/s12020-020-02381-7</ArticleId>
+            <ArticleId IdType="pii">10.1007/s12020-020-02381-7</ArticleId>
+            <ArticleId IdType="pmc">PMC7294766</ArticleId>
         </ArticleIdList>
     </PubmedData>
 </PubmedArticle>
@@ -2567,6 +3835,286 @@
         <ArticleIdList>
             <ArticleId IdType="pubmed">32511066</ArticleId>
             <ArticleId IdType="doi">10.1200/GO.20.00225</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" IndexingMethod="Curated" Owner="NLM">
+        <PMID Version="1">32505599</PMID>
+        <DateCompleted>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>02</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1878-4046</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>27</Volume>
+                    <Issue>7</Issue>
+                    <PubDate>
+                        <Year>2020</Year>
+                        <Month>07</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Academic radiology</Title>
+                <ISOAbbreviation>Acad Radiol</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>CT Manifestations and Clinical Characteristics of 1115 Patients with Coronavirus Disease 2019 (COVID-19): A Systematic Review and Meta-analysis.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>910-921</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S1076-6332(20)30245-2</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.acra.2020.04.033</ELocationID>
+            <Abstract>
+                <AbstractText Label="RATIONALE AND OBJECTIVES">We aimed to assess the prevalence of significant computed tomographic(CT) manifestations and describe some notable features based on chest CT images, as well as the main clinical features of patients with coronavirus disease 2019(COVID-19).</AbstractText>
+                <AbstractText Label="MATERIALS AND METHODS">A systematic literature search of PubMed, EMBASE, the Cochrane Library, and Web of Science was performed to identify studies assessing CT features, clinical, and laboratory results of COVID-19 patients. A single-arm meta-analysis was conducted to obtain the pooled prevalence and 95% confidence interval (95% CI).</AbstractText>
+                <AbstractText Label="RESULTS">A total of 14 articles (including 1115 patients) based on chest CT images were retrieved. In the lesion patterns on chest CTs, we found that pure ground-glass opacities (GGO) (69%, 95% CI 58-80%), consolidation (47%, 35-60%) and &quot;air bronchogram sign&quot; (46%, 25-66%) were more common than the atypical lesion of &quot;crazy-paving pattern&quot; (15%, 8-22%). With regard to disease extent and involvement, 70% (95% CI 46-95%) of cases showed a location preference for the right lower lobe, 65% (58-73%) of patients presented with ≥3 lobes involvement, and meanwhile, 42% (32-53%) of patients had involvement of all five lobes, while 67% (55-78%) of patients showed a predominant peripheral distribution. An understanding of some important CT features might be helpful for medical surveillance and management. In terms of clinical features, muscle soreness (21%, 95% CI 15-26%) and diarrhea (7%, 4-10%) were minor symptoms compared to fever (80%, 74-87%) and cough (53%, 33-72%).</AbstractText>
+                <AbstractText Label="CONCLUSION">Chest CT manifestations in patients with COVID-19, as well as its main clinical characteristics, might be helpful in disease evolution and management.</AbstractText>
+                <CopyrightInformation>Copyright © 2020 The Association of University Radiologists. Published by Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Wan</LastName>
+                    <ForeName>Shang</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, West China Hospital, Sichuan University, No. 37, Guoxue Alley, Chengdu, 610041, PR China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>Mingqi</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Cardiology, Guangdong Provincial People's Hospital, No. 106, Zhongshan 2nd Road, Guangzhou, 510000, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ye</LastName>
+                    <ForeName>Zheng</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, West China Hospital, Sichuan University, No. 37, Guoxue Alley, Chengdu, 610041, PR China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yang</LastName>
+                    <ForeName>Caiwei</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, West China Hospital, Sichuan University, No. 37, Guoxue Alley, Chengdu, 610041, PR China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Cai</LastName>
+                    <ForeName>Qian</ForeName>
+                    <Initials>Q</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Ultrasound, The General Hospital of the People's Liberation Army, No. 28 Fuxing road, Haidian district, Beijing 100089, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Duan</LastName>
+                    <ForeName>Shaofeng</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>GE Healthcare China. No.1, Huatuo road, Pudong new town, Shanghai 210000, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Song</LastName>
+                    <ForeName>Bin</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, West China Hospital, Sichuan University, No. 37, Guoxue Alley, Chengdu, 610041, PR China. Electronic address: songlab_radiology@163.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D017418">Meta-Analysis</PublicationType>
+                <PublicationType UI="D000078182">Systematic Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2020</Year>
+                <Month>05</Month>
+                <Day>05</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Acad Radiol</MedlineTA>
+            <NlmUniqueID>9440159</NlmUniqueID>
+            <ISSNLinking>1076-6332</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D015415">Biomarkers</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>9007-41-4</RegistryNumber>
+                <NameOfSubstance UI="D002097">C-Reactive Protein</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <SupplMeshList>
+            <SupplMeshName Type="Disease" UI="C000657245">COVID-19</SupplMeshName>
+            <SupplMeshName Type="Protocol" UI="C000657964">COVID-19 diagnostic testing</SupplMeshName>
+            <SupplMeshName Type="Organism" UI="C000656484">severe acute respiratory syndrome coronavirus 2</SupplMeshName>
+        </SupplMeshList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000073640" MajorTopicYN="Y">Betacoronavirus</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015415" MajorTopicYN="N">Biomarkers</DescriptorName>
+                <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001995" MajorTopicYN="N">Bronchography</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002097" MajorTopicYN="N">C-Reactive Protein</DescriptorName>
+                <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D019411" MajorTopicYN="N">Clinical Laboratory Techniques</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D018352" MajorTopicYN="N">Coronavirus Infections</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="N">diagnosis</QualifierName>
+                <QualifierName UI="Q000000981" MajorTopicYN="Y">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D003371" MajorTopicYN="N">Cough</DescriptorName>
+                <QualifierName UI="Q000821" MajorTopicYN="N">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D003967" MajorTopicYN="N">Diarrhea</DescriptorName>
+                <QualifierName UI="Q000821" MajorTopicYN="N">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005334" MajorTopicYN="N">Fever</DescriptorName>
+                <QualifierName UI="Q000821" MajorTopicYN="N">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007970" MajorTopicYN="N">Leukopenia</DescriptorName>
+                <QualifierName UI="Q000821" MajorTopicYN="N">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008168" MajorTopicYN="N">Lung</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="Y">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName>
+                <QualifierName UI="Q000821" MajorTopicYN="N">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008231" MajorTopicYN="N">Lymphopenia</DescriptorName>
+                <QualifierName UI="Q000821" MajorTopicYN="N">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063806" MajorTopicYN="N">Myalgia</DescriptorName>
+                <QualifierName UI="Q000821" MajorTopicYN="N">virology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D058873" MajorTopicYN="N">Pandemics</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011024" MajorTopicYN="N">Pneumonia, Viral</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="Y">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D020133" MajorTopicYN="N">Reverse Transcriptase Polymerase Chain Reaction</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013909" MajorTopicYN="N">Thorax</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D014057" MajorTopicYN="N">Tomography, X-Ray Computed</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="Y">COVID-19</Keyword>
+            <Keyword MajorTopicYN="Y">CT manifestations</Keyword>
+            <Keyword MajorTopicYN="Y">Clinical features</Keyword>
+            <Keyword MajorTopicYN="Y">Laboratory</Keyword>
+            <Keyword MajorTopicYN="Y">Meta-analysis</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2020</Year>
+                <Month>03</Month>
+                <Day>23</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2020</Year>
+                <Month>04</Month>
+                <Day>14</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2020</Year>
+                <Month>04</Month>
+                <Day>25</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2020</Year>
+                <Month>6</Month>
+                <Day>9</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2020</Year>
+                <Month>7</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2020</Year>
+                <Month>6</Month>
+                <Day>8</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">32505599</ArticleId>
+            <ArticleId IdType="pii">S1076-6332(20)30245-2</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.acra.2020.04.033</ArticleId>
+            <ArticleId IdType="pmc">PMC7200137</ArticleId>
         </ArticleIdList>
     </PubmedData>
 </PubmedArticle>
@@ -4866,6 +6414,396 @@
                 <Citation>Clin Infect Dis. 2020 Mar 16;:</Citation>
                 <ArticleIdList>
                     <ArticleId IdType="pubmed">32173725</ArticleId>
+                </ArticleIdList>
+            </Reference>
+        </ReferenceList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">32451162</PMID>
+        <DateCompleted>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>02</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1532-7361</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>168</Volume>
+                    <Issue>1</Issue>
+                    <PubDate>
+                        <Year>2020</Year>
+                        <Month>07</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Surgery</Title>
+                <ISOAbbreviation>Surgery</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The management of surgical patients during the coronavirus disease 2019 (COVID-19) pandemic.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>4-10</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S0039-6060(20)30246-4</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.surg.2020.04.036</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND">The coronavirus disease 2019 (COVID-19) pandemic has raised several issues regarding the management of surgical patients. The aim of the current study was to clarify the management of oncologic and surgical patients during the pandemic.</AbstractText>
+                <AbstractText Label="METHODS">Relevant publications reporting on the epidemiology of the pandemic, the diagnosis of the severe acute respiratory syndrome coronavirus 2 infection, and the clinical management of cancer and surgical patients, as well as studies concerning health care workers' safety, were included. The last date of research for this study was April 4, 2020.</AbstractText>
+                <AbstractText Label="RESULTS">We analyzed 28 papers. Real-time polymerase chain reaction was considered the gold standard for the diagnosis of COVID-19, and computed tomography scans were considered useful for cases of diagnostic uncertainty. Cancer patients and surgical patients were confirmed to be particularly at risk of infection and negative outcome. To guarantee adequate care to these patients, while minimizing the risk for infection, the early postponing of elective surgery, the creation of COVID-free facilities and the identification of COVID- dedicated operating theaters and teams have been proposed. The correct use of personal protective equipment was also strongly advocated, along with the institution of facilities for the psychologic support of health care workers.</AbstractText>
+                <AbstractText Label="CONCLUSION">Clinicians should be aware of the importance of providing adequate care to patients with urgent and nondeferrable clinical issues, such as cancer. Every effort should be made to contain the virus spread in the hospital setting. Also, clinicians should value the importance of self-protection and mental health care.</AbstractText>
+                <CopyrightInformation>Copyright © 2020 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Spolverato</LastName>
+                    <ForeName>Gaya</ForeName>
+                    <Initials>G</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Surgical, Oncological and Gastroenterological Sciences, University of Padova, Padova, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Capelli</LastName>
+                    <ForeName>Giulia</ForeName>
+                    <Initials>G</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Surgical, Oncological and Gastroenterological Sciences, University of Padova, Padova, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Restivo</LastName>
+                    <ForeName>Angelo</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Surgical Sciences, University of Cagliari, Cagliari, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bao</LastName>
+                    <ForeName>Quoc Riccardo</ForeName>
+                    <Initials>QR</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Surgical, Oncological and Gastroenterological Sciences, University of Padova, Padova, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pucciarelli</LastName>
+                    <ForeName>Salvatore</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Surgical, Oncological and Gastroenterological Sciences, University of Padova, Padova, Italy. Electronic address: puc@unipd.it.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pawlik</LastName>
+                    <ForeName>Timothy M</ForeName>
+                    <Initials>TM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Surgery, The Ohio State University, Columbus, OH, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gronchi</LastName>
+                    <ForeName>Alessandro</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Surgery, Fondazione IRCCS Istituto Nazionale dei Tumori, Milano, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D017418">Meta-Analysis</PublicationType>
+                <PublicationType UI="D000078182">Systematic Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2020</Year>
+                <Month>05</Month>
+                <Day>01</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Surgery</MedlineTA>
+            <NlmUniqueID>0417347</NlmUniqueID>
+            <ISSNLinking>0039-6060</ISSNLinking>
+        </MedlineJournalInfo>
+        <SupplMeshList>
+            <SupplMeshName Type="Disease" UI="C000657245">COVID-19</SupplMeshName>
+            <SupplMeshName Type="Organism" UI="C000656484">severe acute respiratory syndrome coronavirus 2</SupplMeshName>
+        </SupplMeshList>
+        <CitationSubset>AIM</CitationSubset>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000073640" MajorTopicYN="Y">Betacoronavirus</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D018352" MajorTopicYN="N">Coronavirus Infections</DescriptorName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D058873" MajorTopicYN="N">Pandemics</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D061214" MajorTopicYN="N">Patient Safety</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D019990" MajorTopicYN="Y">Perioperative Care</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000067393" MajorTopicYN="N">Personal Protective Equipment</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011024" MajorTopicYN="N">Pneumonia, Viral</DescriptorName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2020</Year>
+                <Month>04</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2020</Year>
+                <Month>04</Month>
+                <Day>20</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2020</Year>
+                <Month>5</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2020</Year>
+                <Month>7</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2020</Year>
+                <Month>5</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">32451162</ArticleId>
+            <ArticleId IdType="pii">S0039-6060(20)30246-4</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.surg.2020.04.036</ArticleId>
+            <ArticleId IdType="pmc">PMC7252049</ArticleId>
+        </ArticleIdList>
+        <ReferenceList>
+            <Reference>
+                <Citation>N Engl J Med. 2020 Feb 20;382(8):727-733</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">31978945</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 2020 Apr 30;382(18):1708-1720</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32109013</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Int J Infect Dis. 2020 Jun;95:288-293</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32171948</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Radiology. 2020 Feb 12;:200343</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32049601</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA Oncol. 2020 Mar 25;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32211820</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Infect Dis. 2020 Apr;20(4):425-434</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32105637</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Gastroenterol Hepatol. 2020 May;35(5):749-759</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32233034</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur J Radiol. 2020 May;126:108961</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32229322</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Oncol. 2020 Mar;21(3):335-337</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32066541</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Feb 15;395(10223):497-506</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">31986264</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur J Surg Oncol. 2020 Jun;46(6):1186-1187</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32336627</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Front Med. 2020 Apr;14(2):229-231</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32212058</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Feb 15;395(10223):507-513</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32007143</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Anesth Analg. 2020 Jul;131(1):37-42</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32217947</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Can J Anaesth. 2020 Jun;67(6):732-745</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32162212</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Feb 15;395(10223):514-523</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">31986261</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Apr 11;395(10231):1225-1228</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32178769</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 2009 Jul 21;339:b2700</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">19622552</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Surg. 2020 Jul;272(1):e27-e29</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32221117</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Mar 28;395(10229):1015-1018</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32197103</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Clin Infect Dis. 2020 Mar 17;:</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32179890</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Intern Med. 2020 Jun 2;172(11):756-758</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32219410</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Intern Med. 2020 May 5;172(9):577-582</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32150748</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Psychiatry. 2020 Mar;7(3):e14</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32035030</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 2020 Mar 26;368:m1211</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32217624</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Respir Med. 2020 May;8(5):438-440</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32220663</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Respir Med. 2020 May;8(5):e27</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32203708</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2020 Apr 4;395(10230):1110-1111</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32220279</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Infect Dis Rep. 2020 Mar 16;12(1):8543</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32218915</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 2020 Mar 5;382(10):970-971</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32003551</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>PLoS One. 2020 Mar 31;15(3):e0231236</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32231392</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>ESMO Open. 2020 Mar;5(2):</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">32229501</ArticleId>
                 </ArticleIdList>
             </Reference>
         </ReferenceList>
@@ -8991,6 +10929,213 @@
             <ArticleId IdType="pii">S0048-9697(20)32407-4</ArticleId>
             <ArticleId IdType="doi">10.1016/j.scitotenv.2020.138890</ArticleId>
             <ArticleId IdType="pmc">PMC7177086</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" IndexingMethod="Curated" Owner="NLM">
+        <PMID Version="1">32331787</PMID>
+        <DateCompleted>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>01</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2020</Year>
+            <Month>07</Month>
+            <Day>01</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1873-5487</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>51</Volume>
+                    <Issue>5</Issue>
+                    <PubDate>
+                        <Year>2020</Year>
+                        <Month>07</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Archives of medical research</Title>
+                <ISOAbbreviation>Arch. Med. Res.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Comparative Global Epidemiological Investigation of SARS-CoV-2 and SARS-CoV Diseases Using Meta-MUMS Tool Through Incidence, Mortality, and Recovery Rates.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>458-463</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S0188-4409(20)30483-5</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.arcmed.2020.04.005</ELocationID>
+            <Abstract>
+                <AbstractText>COVID-19 is a novel coronavirus that was reported by the world health organization in late December 2019. As an unexplained respiratory disease epidemic, which is similar to respiratory syndrome coronavirus SARS-CoV, it rapidly spread all over the world. The study aims to compare several parameters of COVID-19 and SARS-CoV infectious diseases in terms of incidence, mortality, and recovery rates. The publicly available dataset Worldometer (extracted on April 5, 2020) confirmed by WHO report was available for meta-analysis purposes using the Meta-MUMS tool. And, the reported outcomes of the analysis used a random-effects model to evaluate the event rate, and risk ratios thorough subgroup analysis forest plots. Seventeen countries for COVID-19 and eight countries of SARS infections, including COVID-19 group n = 1124243, and SARS-CoV group n = 8346, were analyzed. In this meta-analysis, a random effect model of relations of incidence, mortality, and recovery rates of COVID-19 and SARS world infections were determined. The meta-analysis and forest plots of two viral world infections showed that the incidence rate of COVID-19 infection is more than SARS infections, while recovery and mortality event rates of SARS-CoV are more than COVID-19 infection. And subgroup analysis showed that the mortality and recovery rates were higher in both SARS-CoV wand COVID-19 in comparison to incidence and mortality rates, respectively. In conclusion, the meta-analysis approach on the abovementioned dataset revealed the epidemiological and statistical analyses for comparing COVID-19 and SARS-CoV outbreaks.</AbstractText>
+                <CopyrightInformation>Copyright © 2020 IMSS. Published by Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Sokouti</LastName>
+                    <ForeName>Massoud</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nuclear Medicine Research Center, Mashhad University of Medical Sciences, Mashhad, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sadeghi</LastName>
+                    <ForeName>Ramin</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nuclear Medicine Research Center, Mashhad University of Medical Sciences, Mashhad, Iran. Electronic address: raminsadeghi1355@yahoo.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pashazadeh</LastName>
+                    <ForeName>Saeid</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Faculty of Computer and Electrical Engineering, University of Tabriz, Tabriz, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Eslami</LastName>
+                    <ForeName>Saeid</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Medical Informatics, Faculty of Medicine, Mashhad University of Medical Sciences, Mashhad, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sokouti</LastName>
+                    <ForeName>Mohsen</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Cardiothoracic Surgery, Tabriz University of Medical Sciences, Tabriz, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ghojazadeh</LastName>
+                    <ForeName>Morteza</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Research Center of Evidence-Based Medicine, Tabriz University of Medical Sciences, Tabriz, Iran.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sokouti</LastName>
+                    <ForeName>Babak</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Biotechnology Research Center, Tabriz University of Medical Sciences, Tabriz, Iran. Electronic address: b.sokouti@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D003160">Comparative Study</PublicationType>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D017418">Meta-Analysis</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2020</Year>
+                <Month>04</Month>
+                <Day>15</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Arch Med Res</MedlineTA>
+            <NlmUniqueID>9312706</NlmUniqueID>
+            <ISSNLinking>0188-4409</ISSNLinking>
+        </MedlineJournalInfo>
+        <SupplMeshList>
+            <SupplMeshName Type="Disease" UI="C000657245">COVID-19</SupplMeshName>
+        </SupplMeshList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D018352" MajorTopicYN="N">Coronavirus Infections</DescriptorName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+                <QualifierName UI="Q000401" MajorTopicYN="Y">mortality</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066264" MajorTopicYN="N">Datasets as Topic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015994" MajorTopicYN="N">Incidence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D058873" MajorTopicYN="N">Pandemics</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011024" MajorTopicYN="N">Pneumonia, Viral</DescriptorName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+                <QualifierName UI="Q000401" MajorTopicYN="Y">mortality</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D045169" MajorTopicYN="N">Severe Acute Respiratory Syndrome</DescriptorName>
+                <QualifierName UI="Q000453" MajorTopicYN="Y">epidemiology</QualifierName>
+                <QualifierName UI="Q000401" MajorTopicYN="Y">mortality</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015996" MajorTopicYN="N">Survival Rate</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="Y">COVID-19</Keyword>
+            <Keyword MajorTopicYN="Y">Epidemiology</Keyword>
+            <Keyword MajorTopicYN="Y">Meta-MUMS</Keyword>
+            <Keyword MajorTopicYN="Y">Meta-analysis</Keyword>
+            <Keyword MajorTopicYN="Y">SARS-CoV</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2020</Year>
+                <Month>04</Month>
+                <Day>06</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2020</Year>
+                <Month>04</Month>
+                <Day>08</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2020</Year>
+                <Month>04</Month>
+                <Day>10</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2020</Year>
+                <Month>4</Month>
+                <Day>26</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2020</Year>
+                <Month>7</Month>
+                <Day>2</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2020</Year>
+                <Month>4</Month>
+                <Day>26</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">32331787</ArticleId>
+            <ArticleId IdType="pii">S0188-4409(20)30483-5</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.arcmed.2020.04.005</ArticleId>
+            <ArticleId IdType="pmc">PMC7158781</ArticleId>
         </ArticleIdList>
     </PubmedData>
 </PubmedArticle>
