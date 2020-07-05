@@ -38,7 +38,7 @@ library(plyr)
 
 # Load word.cities data
 data("world.cities")
-
+world.cities
 # Remove punctuation
 e <- gsub("[[:punct:]\n]","",e)
 

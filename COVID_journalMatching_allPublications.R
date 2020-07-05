@@ -27,22 +27,74 @@ c
 d <- distinct(c,journal)
 d
 # Make all letters in lowercase
-d %>% 
+d <- d  %>% 
   mutate(journal = tolower(journal))
 d
+
+                          ### Scimago journals ###
 # Load Scimago journal database 
 sci_journal <- read.csv("D:/Projekt_COVID/scimagojr_2019_Subject_Area_Medicine.csv",
                         header = TRUE, sep = ";",stringsAsFactors = FALSE)
 sci_journal <- as_tibble(sci_journal)
-
+sci_journal
 # Check structure of the data
 glimpse(sci_journal)
 
-# Prepare Scimago database for matching (distinct Title and Categories columns)
+#Load tm library
+library(tm)
+                      ### Scimago data preparation ###
+### Prepare Scimago database for matching (distinct Title and Categories columns)###
 sci_journal_1 <- distinct(sci_journal,Title,Categories)
 sci_journal_1
 sci_journal_1 <- sci_journal_1 %>%
   mutate(Title =tolower(Title))
 
-sci_journal_2 <- gsub("[[:punct:]\n]","",sci_journal_1)
+# Remove punctuation from Title column
+sci_journal_2 <- sci_journal_1$Title %>%
+  removePunctuation()
+sci_journal_2 <- as_tibble(sci_journal_2)
 sci_journal_2
+
+# Rename column to Title
+sci_journal_3 <- sci_journal_2 %>%
+  rename("Title"= "value")
+sci_journal_3
+
+### Scimago data preparation - adding Categories to Title tibble without punctuation
+
+# Pull Categories data column from
+sci_journal_10 <- sci_journal %>%
+  pull(Categories)
+sci_journal_10 <- as_tibble(sci_journal_10)
+sci_journal_10
+
+# Drop two last rows from Categories tibble
+sci_journal_11 <-sci_journal_10[-c(7461,7462),] 
+sci_journal_11
+sci_journal_12 <- sci_journal_11 %>%
+  rename("Categories"= "value")
+sci_journal_12
+
+# Bind two tibbles (Title and Categories)
+sci_journal_13 <- bind_cols(sci_journal_3,sci_journal_12)
+sci_journal_13
+
+
+                      ### Journal matching data preparation ###
+
+# Remove punctuation from journal column and make tibble again 
+e <- d$journal %>%
+  removePunctuation()
+e
+e <- as_tibble(e)
+e
+
+# Rename value column to Title 
+f <- e %>%
+  rename("Title"= "value")
+f
+                      ### Matching data ###
+
+sci_journal_14 <- sci_journal_13$Categories[match(f$Title,sci_journal_13$Title)]
+sci_journal_14
+
