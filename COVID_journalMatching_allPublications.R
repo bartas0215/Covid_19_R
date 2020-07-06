@@ -1,10 +1,11 @@
 ###sample script - Publications matching####
 library(tidyverse)
 library(easyPubMed)
+library(tm)
 #Download data about Coronavirus COVID 19 meta analysis
 ml_query <- "COVID 19 OR novel coronavirus OR
 coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]
-        AND Guideline[PT] "
+        AND Journal Article[PT] "
 out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 180,
                               dest_dir = NULL, format = "xml")
 readLines(out1[1])[1:30]
@@ -75,8 +76,7 @@ sci_journal
 # Check structure of the data
 glimpse(sci_journal)
 
-#Load tm library
-library(tm)
+
                       ### Scimago data preparation ###
 ### Prepare Scimago database for matching (pull Title column)###
 sci_journal_1 <- sci_journal %>%
