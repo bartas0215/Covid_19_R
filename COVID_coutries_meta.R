@@ -1,6 +1,8 @@
 ###sample script - country analysis####
 library(tidyverse)
 library(easyPubMed)
+library(maps)
+library(plyr)
 #Download data about Coronavirus COVID 19 meta analysis
 ml_query <- "COVID 19 OR novel coronavirus OR
 coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]
@@ -23,31 +25,46 @@ b <- as_tibble(a)
 c <- b %>%
   select(-abstract, -keywords,-email)
 c
-# Distinct address column from the rest of the tibble
-d <- distinct(c,address)
+# Pull address column from the rest of the tibble
+d <- c %>%
+  pull(address)
 d
-# Save data as data frame
-e <- as.data.frame(d)
-e
-# Install packages "maps" and "plyr"
-install.packages("maps")
-install.packages("plyr")
 
-# Load packages 
-library(maps)
-library(plyr)
+# Change names of some countries
 
-# Load word.cities data
-data("world.cities")
+s <- gsub("United Kingdom","UK",d)
+s <- gsub("United States","USA",d)
+s <- gsub("South Korea","S_Korea",d)
+s <- gsub("Saudi Arabia","S_Arabia",d)
+s <- gsub("New Zealand","N_Zealand",d)
+s <- gsub("the Netherlands","Netherlands",d)
 
 # Remove punctuation
-e <- gsub("[[:punct:]\n]","",e)
-
+e <- gsub("[[:punct:]\n]","",s)
+e
 # Split data at word boundaries
 f <- strsplit(e, " ")
+f
+
+### Prepare world.cities for analysis
+
+# Load world.cities data
+data("world.cities")
+
+# Pull country.etc from world.cities
+r <- world.cities %>%
+  pull(country.etc)
+
+# Change names of some countries
+r <- gsub("Korea South","S_Korea",r)
+r <- gsub("Saudi Arabia","S_Arabia",r)
+r <- gsub("New Zealand","N_Zealand",r)
+
+
+### Matching countries
 
 #Match on country in world.countries
-CountryList_raw <- (lapply(raw2, function(x)x[which(toupper(x) %in% toupper(world.cities$country.etc))]))
+CountryList_raw <- (lapply(f, function(x)x[which(toupper(x) %in% toupper(world.cities$country.etc))]))
 g <- do.call(rbind, lapply(CountryList_raw, as.data.frame))
 
 # Check data structure

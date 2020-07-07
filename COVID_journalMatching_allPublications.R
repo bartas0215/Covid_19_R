@@ -4,9 +4,8 @@ library(easyPubMed)
 library(tm)
 #Download data about Coronavirus COVID 19 meta analysis
 ml_query <- "COVID 19 OR novel coronavirus OR
-coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]
-        AND Journal Article[PT] "
-out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 180,
+coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP] "
+out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 1000,
                               dest_dir = NULL, format = "xml")
 readLines(out1[1])[1:30]
 
@@ -60,7 +59,7 @@ e <- q$journal %>%
 e
 e <- as_tibble(e)
 e
-print(e,n=136)
+print(e,n=531)
 # Rename value column to Title 
 f <- e %>%
   rename("Title"= "value")
@@ -135,4 +134,5 @@ sci_journal_15 <- sci_journal_14 %>%
   drop_na()
 sci_journal_15
 
+print(sci_journal_15, n=432)
 
