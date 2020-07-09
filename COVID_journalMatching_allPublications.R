@@ -4,7 +4,8 @@ library(easyPubMed)
 library(tm)
 #Download data about Coronavirus COVID 19 meta analysis
 ml_query <- "COVID 19 OR novel coronavirus OR
-coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP] "
+coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]
+AND Review[PT]"
 out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 1000,
                               dest_dir = NULL, format = "xml")
 readLines(out1[1])[1:30]
@@ -87,8 +88,18 @@ sci_journal_1 <-as_tibble(sci_journal_1)
 sci_journal_1 <- sci_journal_1 %>%
   mutate(value =tolower(value))
 
+## Make changes in Scimago database 
+
+# Remove all data after colon
+h <- apply(h,2,function(x)gsub(":.*","",x))
+
+# Remove all data after colon
+h <- apply(h,2,function(x)gsub(":.*","",x))
+
+
+
 # Remove punctuation from Title column
-sci_journal_2 <- sci_journal_1$value %>%
+sci_journal_2 <- h$value %>%
   removePunctuation()
 sci_journal_2 <- as_tibble(sci_journal_2)
 sci_journal_2
