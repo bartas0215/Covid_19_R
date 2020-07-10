@@ -24,11 +24,14 @@ txt_files_ls = list.files(path=mypath, pattern="*.txt")
 a <- table_articles_byAuth(txt_files_ls,included_authors = "all",
      max_chars = 500,autofill = TRUE,dest_file = "D:/Projekt_COVID",getKeywords = FALSE,encoding = "UTF8")
 
+# Save raw data from table_articles
+saveRDS(a,"D:/Projekt_COVID/raw_data.RDS")
+
 # Check structure of the data 
-str(a)
+str(raw_data)
 
 # Save df as tibble
-b <- as_tibble(a)
+b <- as_tibble(raw_data)
 
 # Delete unnecessary columns
 c <- b %>%
@@ -43,13 +46,14 @@ d
 
 s <- gsub("United Kingdom","UK",d)
 s <- gsub("United States","USA",s)
-s <- gsub("South Korea","S_Korea",s)
-s <- gsub("Saudi Arabia","S_Arabia",s)
-s <- gsub("New Zealand","N_Zealand",s)
+s <- gsub("South Korea","Southkorea",s)
+s <- gsub("Saudi Arabia","Saudiarabia",s)
+s <- gsub("New Zealand","Newzealand",s)
 s <- gsub("the Netherlands","Netherlands",s)
-s <- gsub("South Africa","S_Africa",s)
-s <- gsub("Czech Republic", "C_Republic",s) 
-s <- gsub("Costa Rica", "C_Rica",s)
+s <- gsub("South Africa","Southafrica",s)
+s <- gsub("Czech Republic", "Czechrepublic",s) 
+s <- gsub("Costa Rica", "Costarica",s)
+s
 
 # Remove punctuation
 e <- gsub("[[:punct:]\n]","",s)
@@ -68,14 +72,14 @@ r <- world.cities %>%
   pull(country.etc)
 
 # Change names of some countries
-r <- gsub("Korea South","S_Korea",r)
-r <- gsub("Saudi Arabia","S_Arabia",r)
-r <- gsub("New Zealand","N_Zealand",r)
-r <- gsub("South Africa","S_Africa",r)
-r <- gsub("Czech Republic", "C_Republic",r)
-r <- gsub("Costa Rica", "C_Rica",r)
+r <- gsub("Korea South","Southkorea",r)
+r <- gsub("Saudi Arabia","Saudiarabia",r)
+r <- gsub("New Zealand","Newzealand",r)
+r <- gsub("South Africa","Southafrica",r)
+r <- gsub("Czech Republic", "Czechrepublic",r)
+r <- gsub("Costa Rica", "Costarica",r)
                               
-
+r <- as_tibble(r)
                               ### Matching countries ###
 
 ### Cluster data
@@ -87,10 +91,10 @@ detectCores()
 cluster_1 <- makeCluster(3)
 
 # Export needed data to every cluster
-clusterExport(cluster_1,"world.cities")
+clusterExport(cluster_1,"r")
 
 # Apply function
-l <- clusterApply(cluster_1,f,function(x)x[which(toupper(x) %in% toupper(world.cities$country.etc))])
+l <- clusterApply(cluster_1,f,function(x)x[which(toupper(x) %in% toupper(r$value))])
 
 # Stop cluster
 stopCluster(cluster_1)
@@ -109,6 +113,19 @@ m <- as_tibble(m)
 m <- m %>%
   arrange(desc(freq))
 m
+
 # Save results 
 saveRDS(m,"D:/Projekt_COVID/COVID_Data/matched_countries.RDS")
+
+
+### Tidy output data
+
+# Save as data frame
+o <- data.frame(lapply(m, as.character), stringsAsFactors=FALSE)
+o
+o <- as_tibble(o)
+
+# Delete useless data
+po <- o %>%
+  slice(c(1:128,130:132))
 
