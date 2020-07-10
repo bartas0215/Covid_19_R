@@ -8,13 +8,21 @@ library(parallel)
 ml_query <- "COVID 19 OR novel coronavirus OR
 coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]"
 
-out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 1000,
+out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 5000,
 dest_dir = "D:/Projekt_COVID/COVID_Data", format = "xml")
 readLines(out1[1])[1:30]
 
+# Load downloaded data
+mypath = "D:/Projekt_COVID/COVID_Data"
+setwd(mypath)
+
+# Create list of text files
+txt_files_ls = list.files(path=mypath, pattern="*.txt") 
+
+
 # Save downloaded data as df regarding publication authors
-a <- table_articles_byAuth(out1,included_authors = "all",
-     max_chars = 500,autofill = TRUE,dest_file = "D:/Data_R_Meta/Dane_meta.rds",getKeywords = FALSE,encoding = "UTF8")
+a <- table_articles_byAuth(txt_files_ls,included_authors = "all",
+     max_chars = 500,autofill = TRUE,dest_file = "D:/Projekt_COVID",getKeywords = FALSE,encoding = "UTF8")
 
 # Check structure of the data 
 str(a)
@@ -101,6 +109,6 @@ m <- as_tibble(m)
 m <- m %>%
   arrange(desc(freq))
 m
-
-
+# Save results 
+saveRDS(m,"D:/Projekt_COVID/COVID_Data/matched_countries.RDS")
 
