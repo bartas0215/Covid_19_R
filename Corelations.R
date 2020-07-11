@@ -58,7 +58,7 @@ countries_6 <- bind_cols(px,countries_6)
 countries_6
 str(countries_6)
 
-# Solve problem with Taiwan and Somalia variables
+# Solve problem with Taiwan and Somalia (no HDI for 2018) variables
 
 countries_7  <- countries_6 %>%
   slice(c(1:15,17:122))
@@ -144,6 +144,8 @@ population_3 <- population_2 %>%
  
  population_7  <- population_6 %>%
    slice(c(1:15,17:122))
+ population_7  <- population_7 %>%
+   slice(c(1:116,118:121))
 population_7
  population_7 <- population_7 %>%
    add_row(Country = "taiwan",Number = 283, value=238)
