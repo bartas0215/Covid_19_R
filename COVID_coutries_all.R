@@ -4,6 +4,8 @@ library(easyPubMed)
 library(maps)
 library(plyr)
 library(parallel)
+# Load if any conflict had occured
+library(conflicted)
 #Download data about Coronavirus COVID 19 meta analysis
 ml_query <- "COVID 19 OR novel coronavirus OR
 coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]"
@@ -53,6 +55,7 @@ s <- gsub("the Netherlands","Netherlands",s)
 s <- gsub("South Africa","Southafrica",s)
 s <- gsub("Czech Republic", "Czechrepublic",s) 
 s <- gsub("Costa Rica", "Costarica",s)
+s <- gsub("Jersey", "USA",s)
 s
 
 # Remove punctuation
@@ -78,9 +81,9 @@ r <- gsub("New Zealand","Newzealand",r)
 r <- gsub("South Africa","Southafrica",r)
 r <- gsub("Czech Republic", "Czechrepublic",r)
 r <- gsub("Costa Rica", "Costarica",r)
-                              
+r <- gsub("Jersey", "USA",r)                              
 r <- as_tibble(r)
-                              ### Matching countries ###
+r                              ### Matching countries ###
 
 ### Cluster data
 
@@ -105,27 +108,35 @@ l <- do.call(rbind, lapply(l, as.data.frame))
 # Check data structure
 str(l)
 l
+
+### Tidy output data
+
+# Change factor to character variable
+o <- data.frame(lapply(l, as.character), stringsAsFactors=FALSE)
+
 # Count countries
-m <- count(l)
+o <- o %>%
+ mutate(X..i..=tolower(X..i..))
+m <- count(o)
 m
+
 # Arrange results in decreasing order
 m <- as_tibble(m)
 m <- m %>%
   arrange(desc(freq))
 m
 
-# Save results 
-saveRDS(m,"D:/Projekt_COVID/COVID_Data/matched_countries.RDS")
-
-
-### Tidy output data
-
-# Save as data frame
-o <- data.frame(lapply(m, as.character), stringsAsFactors=FALSE)
-o
-o <- as_tibble(o)
-
 # Delete useless data
-po <- o %>%
-  slice(c(1:128,130:132))
+px <- m %>%
+  slice(c(1:121,123))
+
+# Rename columns
+px <- px %>% 
+  rename("Number"="freq")
+px <- px %>%
+  rename("Country"="X..i..")
+px
+
+# Save results 
+saveRDS(px,"D:/Projekt_COVID/matched_countries.RDS")
 
