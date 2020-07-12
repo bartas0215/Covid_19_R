@@ -12,10 +12,14 @@ cor_1
 
 # Make plot for correlation
 
-cor_hdi <- ggplot(final_data,aes(x=Articles_perMln,y=HDI_2018)) + geom_point() + geom_smooth() + annotate("text",x=50, y=0.4, 
-                                                                                          label=paste("R = 0.759085"
-                                                                                          ))
+cor_hdi <- ggplot(final_data,aes(x=HDI_2018,y=Articles_perMln)) + geom_point() +  geom_smooth() + annotate("text",x=0.55, y=50, 
+                                                                                          label=paste("Rs = 0.76"), size = 10
+                                                                                          ) + scale_y_log10() 
 cor_hdi
+
+# Save HDI_corr plot
+ggsave(device = "png", filename = "hdi_cor_600_dpi",plot =  cor_hdi,dpi = 600, 
+       path = "D:/Projekt_COVID/Plots")
 
 
 # Addition on country label
@@ -30,3 +34,4 @@ cor_hdi_1
 # Saving plots
 saveRDS(cor_hdi,"D:/Projekt_COVID/Plots/hdi_cor_withoutLabel.RDS")
 saveRDS(cor_hdi_1,"D:/Projekt_COVID/Plots/hdi_cor_Labeled.RDS")
+
