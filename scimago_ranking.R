@@ -47,5 +47,5 @@ ranking_px <- px %>%
 
 # Match countries and ranking
 
-ranking_5 <- ranking_4$value[match(ranking_px$Country,ranking_4$value1)]
+ranking_5 <- ranking_4$value[match(px$Country,ranking_4$value1)]
 ranking_5 <- as_tibble(ranking_5)

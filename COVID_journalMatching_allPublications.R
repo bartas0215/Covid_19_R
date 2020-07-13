@@ -10,6 +10,13 @@ out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 1000,
                               dest_dir = NULL, format = "xml")
 readLines(out1[1])[1:30]
 
+# Load downloaded data
+mypath = "D:/Projekt_COVID/COVID_Data"
+setwd(mypath)
+
+# Create list of text files
+txt_files_ls = list.files(path=mypath, pattern="*.txt") 
+
 # Save downloaded data as df regarding publication authors
 a <- table_articles_byAuth(out1,included_authors = "all",
                            max_chars = 500,autofill = TRUE,dest_file = "D:/Data_R_Meta/journal.rds",getKeywords = FALSE,encoding = "UTF8")
@@ -18,53 +25,53 @@ a <- table_articles_byAuth(out1,included_authors = "all",
 str(a)
 
 # Save df as tibble
-b <- as_tibble(a)
+b1 <- as_tibble(raw_data)
 
 # Delete unnecessary columns
-c <- b %>%
+c1 <- b1 %>%
   select(-abstract, -keywords,-email)
-c
+c1
 # Distinct journal column from the rest of the tibble
-d <- distinct(c,journal)
-d
+d1 <- distinct(c1,journal)
+d1
 # Make all letters in lowercase
-d <- d  %>% 
+d1 <- d1  %>% 
   mutate(journal = tolower(journal))
-d
+d1
 
                     ### Prepare data from EasyPubMed###
 
 # Remove all data in parenthesis
-q <- apply(d,2,function(x)gsub("\\s*\\([^\\)]+\\)","",x))
+q1 <- apply(d1,2,function(x)gsub("\\s*\\([^\\)]+\\)","",x))
 
 # Remove all data after colon
-q <- apply(q,2,function(x)gsub(":.*","",x))
+q1 <- apply(q1,2,function(x)gsub(":.*","",x))
 
 # Remove commas
-q <- apply(q,2,function(x)gsub(",","",x))
+q1 <- apply(q1,2,function(x)gsub(",","",x))
 
 # Remove euqal sign 
-q <- apply(q,2,function(x)gsub("=","",x))
+q1 <- apply(q1,2,function(x)gsub("=","",x))
 
 # Change &amp; to and
-q <- apply(q,2,function(x)gsub("&amp;", "and", x))
+q1 <- apply(q1,2,function(x)gsub("&amp;", "and", x))
 
 # Remove whitespace
-q <- apply(q,2,function(x)gsub('\\s+', '',x))
+q1 <- apply(q1,2,function(x)gsub('\\s+', '',x))
 # Save as tibble
-q <- as_tibble(q)
+q1 <- as_tibble(q1)
 
 # Remove punctuation from journal column and make tibble again 
-e <- q$journal %>%
+e1 <- q1$journal %>%
   removePunctuation()
-e
-e <- as_tibble(e)
-e
-print(e,n=531)
+e1
+e1 <- as_tibble(e1)
+e1
+
 # Rename value column to Title 
-f <- e %>%
+f1 <- e1 %>%
   rename("Title"= "value")
-f
+f1
                           
                         ### Scimago journals - data loading ###
 
@@ -91,15 +98,15 @@ sci_journal_1 <- sci_journal_1 %>%
 ## Make changes in Scimago database 
 
 # Remove all data after colon
-h <- apply(h,2,function(x)gsub(":.*","",x))
+sci_journal_1 <- apply(sci_journal_1,2,function(x)gsub(":.*","",x))
 
 # Remove all data after colon
-h <- apply(h,2,function(x)gsub(":.*","",x))
+sci_journal_1 <- apply(sci_journal_1,2,function(x)gsub(":.*","",x))
 
 
 
 # Remove punctuation from Title column
-sci_journal_2 <- h$value %>%
+sci_journal_2 <- sci_journal_1 %>%
   removePunctuation()
 sci_journal_2 <- as_tibble(sci_journal_2)
 sci_journal_2
@@ -122,8 +129,12 @@ sci_journal_10 <- sci_journal %>%
 sci_journal_10 <- as_tibble(sci_journal_10)
 sci_journal_10
 
+# Prepare data
+sci_journal_11 <- apply(sci_journal_10,2,function(x)gsub(';.*', '',x))
+sci_journal_11 <- apply(sci_journal_11,2,function(x)gsub("\\s*\\([^\\)]+\\)","",x))
+sci_journal_11 <- as_tibble(sci_journal_11)
 # Rename value to Categories
-sci_journal_12 <- sci_journal_10 %>%
+sci_journal_12 <- sci_journal_11 %>%
   rename("Categories"= "value")
 sci_journal_12
 
@@ -132,18 +143,53 @@ sci_journal_13 <- bind_cols(sci_journal_4,sci_journal_12)
 sci_journal_13
 
 
-                      ### Matching data ###
+                      ### Matching data_categories ###
 
 # Match data
-sci_journal_14 <- sci_journal_13$Title[match(f$Title,sci_journal_13$Title)]
+sci_journal_14 <- sci_journal_13$Categories[match(f1$Title,sci_journal_13$Title)]
 sci_journal_14
 sci_journal_14 <- as_tibble(sci_journal_14)
 sci_journal_14
+
 
 # Drop missing rows
 sci_journal_15 <- sci_journal_14 %>%
   drop_na()
 sci_journal_15
 
-print(sci_journal_15, n=432)
+# COunt categories
+sci_journal_16 <- count(sci_journal_15)
+sci_journal_16 <- as_tibble(sci_journal_16)
+sci_journal_16
+
+sci_journal_16 <- sci_journal_16 %>%
+  arrange(desc(freq))
+print(sci_journal_16, n=124)
+
+#SLice 20 from the top
+sci_journal_17 <- sci_journal_16 %>%
+  slice(1:20)
+sci_journal_17
+
+# Rename columns
+sci_journal_18 <- sci_journal_17 %>%
+  rename("Categories"= "value")
+sci_journal_18 <- sci_journal_18 %>%
+  rename("Number"= "freq")
+
+sci_journal_18
+
+
+                  ### Matching data_q ###
+
+sci_journal_10q <- sci_journal %>%
+  pull(Categories)
+sci_journal_10q <- as_tibble(sci_journal_10q)
+sci_journal_10q
+
+sci_journal_11q <- apply(sci_journal_10q,2,function(x)gsub(';.*', '',x))
+sci_journal_11q <- apply(sci_journal_11q,2,function(x)gsub('', '',x))
+sci_journal_11q <- as_tibble(sci_journal_11q)
+sci_journal_11q
+
 
