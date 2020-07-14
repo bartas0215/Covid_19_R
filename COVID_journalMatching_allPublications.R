@@ -2,6 +2,8 @@
 library(tidyverse)
 library(easyPubMed)
 library(tm)
+library(plyr)
+library(xlsx)
 #Download data about Coronavirus COVID 19 meta analysis
 ml_query <- "COVID 19 OR novel coronavirus OR
 coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]
@@ -41,6 +43,8 @@ d1
 
                     ### Prepare data from EasyPubMed###
 
+
+
 # Remove all data in parenthesis
 q1 <- apply(d1,2,function(x)gsub("\\s*\\([^\\)]+\\)","",x))
 
@@ -50,14 +54,19 @@ q1 <- apply(q1,2,function(x)gsub(":.*","",x))
 # Remove commas
 q1 <- apply(q1,2,function(x)gsub(",","",x))
 
-# Remove euqal sign 
+# Remove equal sign 
 q1 <- apply(q1,2,function(x)gsub("=","",x))
 
 # Change &amp; to and
 q1 <- apply(q1,2,function(x)gsub("&amp;", "and", x))
 
+# Remove the from text 
+q1 <- apply(q1,2,function(x)gsub("the", "", x))
+
 # Remove whitespace
 q1 <- apply(q1,2,function(x)gsub('\\s+', '',x))
+q1 <- apply(q1,2,function(x)gsub(' +',' ',x))
+
 # Save as tibble
 q1 <- as_tibble(q1)
 
@@ -100,9 +109,8 @@ sci_journal_1 <- sci_journal_1 %>%
 # Remove all data after colon
 sci_journal_1 <- apply(sci_journal_1,2,function(x)gsub(":.*","",x))
 
-# Remove all data after colon
-sci_journal_1 <- apply(sci_journal_1,2,function(x)gsub(":.*","",x))
-
+# Remove "the" 
+sci_journal_1 <- apply(sci_journal_1,2,function(x)gsub("the","",x))
 
 
 # Remove punctuation from Title column
@@ -179,6 +187,12 @@ sci_journal_18 <- sci_journal_18 %>%
 
 sci_journal_18
 
+
+# Save as RDS file
+saveRDS(sci_journal_18,"D:/Projekt_COVID/scimago_categories_readyData.RDS")
+
+# Save as excel file
+write.xlsx(sci_journal_18,file = "D:/Projekt_COVID/Tabels/categories_scimago.xlsx")
 
                   ### Matching data_q ###
 
