@@ -84,6 +84,17 @@ ranking_7 <- ranking_6 %>%
   select(-c(Population,Population_mln,Articles_perMln,HDI_2018,))
 ranking_7
 
+
+
+# Save data
+
+ranking_7 <- ranking_7 %>%
+  mutate(Country= str_to_title(Country))
+
+saveRDS(ranking_7,"D:/Projekt_COVID/scimago_ranking_full.RDS")
+
+# Slice data
+
 ranking_7 <- ranking_7 %>%
   slice(1:20)
 ranking_7 

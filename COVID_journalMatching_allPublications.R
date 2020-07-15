@@ -201,9 +201,48 @@ sci_journal_10q <- sci_journal %>%
 sci_journal_10q <- as_tibble(sci_journal_10q)
 sci_journal_10q
 
-sci_journal_11q <- apply(sci_journal_10q,2,function(x)gsub(';.*', '',x))
-sci_journal_11q <- apply(sci_journal_11q,2,function(x)gsub('', '',x))
+# Remove all text except for Q value
+sci_journal_11q <- apply(sci_journal_10q,2,function(x)gsub(';.*', "",x))
+sci_journal_11q <- apply(sci_journal_11q,2,function(x)gsub("\\s+\\([^)]*\\)(*SKIP)(*FAIL)|.", "", perl = TRUE,x))
 sci_journal_11q <- as_tibble(sci_journal_11q)
 sci_journal_11q
 
+# Remove additional words
+sci_journal_12q <- apply(sci_journal_11q,2,function(x)gsub('(miscellaneous)', "",x))
+sci_journal_12q <- apply(sci_journal_12q,2,function(x)gsub('(social science)', "",x))
+sci_journal_12q <- apply(sci_journal_12q,2,function(x)gsub('(medical)', "",x))
+sci_journal_12q <- apply(sci_journal_12q,2,function(x)gsub('(clinical)', "",x))
+sci_journal_12q <- as_tibble(sci_journal_12q)
+sci_journal_12q
+
+
+
+# Remove parenthesis
+sci_journal_13q <- apply(sci_journal_12q,2,function(x)gsub("[()]","",x))
+sci_journal_13q <- as_tibble(sci_journal_13q)
+sci_journal_13q
+
+# Remove whitespace
+sci_journal_13q <- apply(sci_journal_13q,2,function(x)gsub('\\s+', '',x))
+sci_journal_13q <- as_tibble(sci_journal_13q)
+sci_journal_13q
+
+# Bind the table
+
+sci_journal_14q <- bind_cols(sci_journal_4,sci_journal_13q)
+sci_journal_14q
+
+# Match data 
+
+sci_journal_15q <- sci_journal_14q$value[match(f1$Title,sci_journal_14q$Title)]
+sci_journal_15q <- as_tibble(sci_journal_15q)
+sci_journal_15q
+
+# Drop missing rows
+sci_journal_15q <- sci_journal_15q %>%
+  drop_na()
+sci_journal_15q
+
+
+### Continuation in quartile script
 
