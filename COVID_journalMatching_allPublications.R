@@ -212,6 +212,7 @@ sci_journal_12q <- apply(sci_journal_11q,2,function(x)gsub('(miscellaneous)', ""
 sci_journal_12q <- apply(sci_journal_12q,2,function(x)gsub('(social science)', "",x))
 sci_journal_12q <- apply(sci_journal_12q,2,function(x)gsub('(medical)', "",x))
 sci_journal_12q <- apply(sci_journal_12q,2,function(x)gsub('(clinical)', "",x))
+sci_journal_12q <- apply(sci_journal_12q,2,function(x)gsub('(nursing)', "",x))
 sci_journal_12q <- as_tibble(sci_journal_12q)
 sci_journal_12q
 
@@ -243,6 +244,14 @@ sci_journal_15q <- sci_journal_15q %>%
   drop_na()
 sci_journal_15q
 
+# Rename value
+sci_journal_15q <- sci_journal_15q %>%
+  rename("Number_of_quartiles"="value")
+sci_journal_15q
 
-### Continuation in quartile script
+# Count quartiles
+sci_journal_15q <- count(sci_journal_15q)
 
+# Save data
+write.xlsx(sci_journal_15q,"D:/Projekt_COVID/Tabels/quartile.xlsx")
+saveRDS(sci_journal_15q,"D:/Projekt_COVID/quartile_Ready" )

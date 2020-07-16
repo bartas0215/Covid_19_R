@@ -61,16 +61,15 @@ str(countries_6)
 # Solve problem with Taiwan and Somalia (no HDI for 2018) variables
 
 countries_7  <- countries_6 %>%
-  slice(c(1:15,17:122))
+  slice(c(1:19,21:122))
 countries_7  <- countries_7 %>%
-  slice(c(1:116,118:121))
+  slice(c(1:112,114:121))
 countries_7
 
 countries_7 <- countries_7 %>%
-  add_row(Country = "taiwan",Number = 283, value=0.880)
-countries_7 <- countries_7 %>%
-  add_row(Country = "somalia",Number = 2, value=0)
-countries_7
+  add_row(Country = "taiwan",Number = 128, value=0.880)
+
+  
 
 # Arrange in order
 countries_7 <- countries_7 %>%
@@ -143,12 +142,12 @@ population_3 <- population_2 %>%
  # Solve problem with Taiwan variable
  
  population_7  <- population_6 %>%
-   slice(c(1:15,17:122))
+   slice(c(1:19,21:122))
  population_7  <- population_7 %>%
-   slice(c(1:116,118:121))
+   slice(c(1:112,114:121))
 population_7
  population_7 <- population_7 %>%
-   add_row(Country = "taiwan",Number = 283, value=238)
+   add_row(Country = "taiwan",Number = 128, value=23.78)
  population_7
  
  # Arrange in order
@@ -169,6 +168,10 @@ population_9 <- population_8 %>%
 
 population_9
 
+# Rename number column
+population_9 <- population_9 %>%
+  rename("Number_of_authors"="Number")
+population_9
 
                         ### Final data preparation ###
 

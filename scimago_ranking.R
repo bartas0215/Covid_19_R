@@ -42,10 +42,11 @@ ranking_4 <- apply(ranking_4,2,function(x)gsub("brunei darussalam","brunei",x))
 
 ranking_4 <- as_tibble(ranking_4)                     
 str(ranking_4)
-
+ranking_4 <- apply(ranking_4,2,function(x)gsub('\\s+', '',x))
+ranking_4 <- as_tibble(ranking_4)
 
 ranking_px <- matched_countries %>%
-  slice(1:117,119:122)
+  slice(1:113,115:122)
 
 # Match countries and ranking
 
@@ -68,7 +69,7 @@ ranking_6 <- ranking_6 %>%
   rename("Scimago_rank"="value")
 
 ranking_6 <- ranking_6 %>%
-  rename("Number_of_publications"="Number")
+  rename("Number_of_publications"="Number_of_authors")
 
 # Make plot and analyse correlation
 

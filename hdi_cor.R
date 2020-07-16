@@ -13,12 +13,12 @@ cor_1
 # Make plot for correlation
 
 cor_hdi <- ggplot(final_data,aes(x=HDI_2018,y=Articles_perMln)) + geom_point() +  geom_smooth() + annotate("text",x=0.55, y=50, 
-                                                                                          label=paste("Rs = 0.76"), size = 10
+                                                                                          label=paste("Rs = 0.77"), size = 10
                                                                                           ) + scale_y_log10() 
 cor_hdi
 
 # Save HDI_corr plot
-ggsave(device = "png", filename = "hdi_cor_600_dpi",plot =  cor_hdi,dpi = 600, 
+ggsave(device = "png", filename = "hdi_cor_600_dpi.png",plot =  cor_hdi,dpi = 600, 
        path = "D:/Projekt_COVID/Plots")
 
 

@@ -41,7 +41,7 @@ c <- b %>%
 c
 # Pull address column from the rest of the tibble
 d <- c %>%
-  pull(address)
+  distinct(address)
 d
 
 # Change names of some countries
@@ -128,7 +128,7 @@ m
 
 # Delete useless data
 px <- m %>%
-  slice(c(1:121,123))
+  slice(c(1:120,122:123))
 
 # Rename columns
 px <- px %>% 
