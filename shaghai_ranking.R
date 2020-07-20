@@ -8,7 +8,7 @@ sh <- as_tibble(sh)
 sh
 
 # Save RDS
-saveRDS(sh,"D:/Projekt_COVID/shangai_ranking_Readydata")
+saveRDS(sh,"D:/Projekt_COVID/shangai_ranking_Readydata.RDS")
 
 ## Prepare table 
 
@@ -35,7 +35,7 @@ cor_sh
 # Make plot for correlation
 
 cor_sh_1 <- ggplot(sh,aes(x=Total.Score,y=Number_of_articles)) + geom_point() +  geom_smooth() + annotate("text",x=87.5, y=87.5, 
-                                                                                                           label=paste("Rs = 0.3"), size = 7
+                                                                                                           label=paste("Rs = 0.35"), size = 7
 ) 
 cor_sh_1
 

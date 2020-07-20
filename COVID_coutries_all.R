@@ -83,6 +83,7 @@ r <- gsub("Czech Republic", "Czechrepublic",r)
 r <- gsub("Costa Rica", "Costarica",r)
 r <- gsub("Jersey", "USA",r)                              
 r <- as_tibble(r)
+
 r                              ### Matching countries ###
 
 ### Cluster data

@@ -115,4 +115,3 @@ saveRDS(ranking_9,"D:/Projekt_COVID/scimago_ranking_readyData.RDS")
 
 # Save as excel file
 write.xlsx(ranking_9,file = "D:/Projekt_COVID/Tabels/scimago_ranking.xlsx")
-
