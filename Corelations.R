@@ -33,6 +33,11 @@ countries_3 <- apply(countries_3,2,function(x)gsub("czechia","czechrepublic",x))
 countries_3 <- apply(countries_3,2,function(x)gsub("north macedonia","macedonia",x))
 countries_3 <- apply(countries_3,2,function(x)gsub("syrian arab republic","syria",x))
 countries_3 <- apply(countries_3,2,function(x)gsub("brunei darussalam","brunei",x))
+countries_3 <- apply(countries_3,2,function(x)gsub("united arab emirates","uae",x))
+countries_3 <- apply(countries_3,2,function(x)gsub("el salvador","elsalvador",x))
+countries_3 <- apply(countries_3,2,function(x)gsub("bosnia and herzegovina","bosnia",x))
+countries_3 <- apply(countries_3,2,function(x)gsub("sri lanka","srilanka",x))
+countries_3 <- apply(countries_3,2,function(x)gsub("lao people's democratic republic","laos",x))
 
 countries_4 <- as_tibble(countries_3)
 countries_4
@@ -58,22 +63,31 @@ countries_6 <- bind_cols(px,countries_6)
 countries_6
 str(countries_6)
 
-# Solve problem with Taiwan and Somalia (no HDI for 2018) variables
+## Solve problem with lack of HDI Data (no HDI for 2018) variables
 
+# Remove taiwan
 countries_7  <- countries_6 %>%
-  slice(c(1:19,21:122))
+  slice(c(1:17,19:149))
+# Remove Monaco
 countries_7  <- countries_7 %>%
-  slice(c(1:112,114:121))
+  slice(c(1:104,106:148))
+# Remove Bermuda
+countries_7  <- countries_7 %>%
+  slice(c(1:124,126:147))
+# Remove Guam
+countries_7  <- countries_7 %>%
+  slice(c(1:132,134:146))
+
 countries_7
 
 countries_7 <- countries_7 %>%
-  add_row(Country = "taiwan",Number = 128, value=0.880)
+  add_row(Country = "taiwan",Number_of_authors = 643, value=0.880)
 
   
 
 # Arrange in order
 countries_7 <- countries_7 %>%
-  arrange(desc(Number))
+  arrange(desc(Number_of_authors))
 
 
 
@@ -112,7 +126,11 @@ population_3 <- population_2 %>%
  population_4 <- apply(population_4,2,function(x)gsub("north macedonia","macedonia",x))
  population_4 <- apply(population_4,2,function(x)gsub("syrian arab republic","syria",x))
  population_4 <- apply(population_4,2,function(x)gsub("brunei darussalam","brunei",x))
- 
+ population_4 <- apply(population_4,2,function(x)gsub("united arab emirates","uae",x))
+ population_4 <- apply(population_4,2,function(x)gsub("el salvador","elsalvador",x))
+ population_4 <- apply(population_4,2,function(x)gsub("bosnia and herzegovina","bosnia",x))
+ population_4 <- apply(population_4,2,function(x)gsub("sri lanka","srilanka",x))
+ population_4 <- apply(population_4,2,function(x)gsub("lao people's democratic republic","laos",x))
  
  
  population_4 <- as_tibble(population_4)
@@ -139,20 +157,31 @@ population_3 <- population_2 %>%
  population_6
  str(population_6)
  
- # Solve problem with Taiwan variable
+ ## Solve problem with Taiwan variable
  
+ # Remove taiwan
  population_7  <- population_6 %>%
-   slice(c(1:19,21:122))
+   slice(c(1:17,19:149))
+ # Remove Monaco
  population_7  <- population_7 %>%
-   slice(c(1:112,114:121))
-population_7
+   slice(c(1:104,106:148))
+ # Remove Bermuda
  population_7 <- population_7 %>%
-   add_row(Country = "taiwan",Number = 128, value=23.78)
+   slice(c(1:124,126:147))
+ # Remove Guam
+ population_7  <- population_7 %>%
+   slice(c(1:132,134:146))
+
+ 
+ population_7
+ 
+population_7 <- population_7 %>%
+   add_row(Country = "taiwan",Number_of_authors = 643, value=23.78)
  population_7
  
  # Arrange in order
  population_7 <- population_7 %>%
-   arrange(desc(Number))
+   arrange(desc(Number_of_authors))
  
  
  
@@ -164,14 +193,10 @@ population_7
 population_8 
  
 population_9 <- population_8 %>%
-  mutate(Articles_perMln=(Number*1e6)/Population_mln)
+  mutate(Articles_perMln=(Number_of_authors*1e6)/Population_mln)
 
 population_9
 
-# Rename number column
-population_9 <- population_9 %>%
-  rename("Number_of_authors"="Number")
-population_9
 
                         ### Final data preparation ###
 

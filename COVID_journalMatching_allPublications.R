@@ -13,7 +13,7 @@ out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 1000,
 readLines(out1[1])[1:30]
 
 # Load downloaded data
-mypath = "D:/Projekt_COVID/COVID_Data"
+mypath = "D:/Projekt_COVID/COVID_Data_1"
 setwd(mypath)
 
 # Create list of text files
@@ -27,7 +27,7 @@ a <- table_articles_byAuth(out1,included_authors = "all",
 str(a)
 
 # Save df as tibble
-b1 <- as_tibble(raw_data)
+b1 <- as_tibble(raw_data_full)
 
 # Delete unnecessary columns
 c1 <- b1 %>%
@@ -36,10 +36,20 @@ c1
 # Distinct journal column from the rest of the tibble
 d1 <- distinct(c1,journal)
 d1
+
+d1 <- c1 %>%
+  distinct(title,.keep_all = TRUE) %>%
+  pull(journal)
+d1 <- as_tibble(d1)
 # Make all letters in lowercase
 d1 <- d1  %>% 
-  mutate(journal = tolower(journal))
-d1
+  mutate(value = tolower(value))
+
+d1 <- d1 %>%
+  rename("Journal"="value")
+
+
+
 
                     ### Prepare data from EasyPubMed###
 
@@ -71,7 +81,7 @@ q1 <- apply(q1,2,function(x)gsub(' +',' ',x))
 q1 <- as_tibble(q1)
 
 # Remove punctuation from journal column and make tibble again 
-e1 <- q1$journal %>%
+e1 <- q1$Journal %>%
   removePunctuation()
 e1
 e1 <- as_tibble(e1)
@@ -81,6 +91,9 @@ e1
 f1 <- e1 %>%
   rename("Title"= "value")
 f1
+f1 <- f1 %>%
+  mutate(Title =tolower(Title))
+
                           
                         ### Scimago journals - data loading ###
 
@@ -172,7 +185,10 @@ sci_journal_16
 
 sci_journal_16 <- sci_journal_16 %>%
   arrange(desc(freq))
-print(sci_journal_16, n=124)
+print(sci_journal_16, n=196)
+
+saveRDS(sci_journal_16,"D:/Projekt_COVID/scimago_categories_full.RDS")
+
 
 #SLice 20 from the top
 sci_journal_17 <- sci_journal_16 %>%

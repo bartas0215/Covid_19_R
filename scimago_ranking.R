@@ -39,14 +39,19 @@ ranking_4 <- apply(ranking_4,2,function(x)gsub("czech republic","czechrepublic",
 ranking_4 <- apply(ranking_4,2,function(x)gsub("north macedonia","macedonia",x))
 ranking_4 <- apply(ranking_4,2,function(x)gsub("syrian arab republic","syria",x))
 ranking_4 <- apply(ranking_4,2,function(x)gsub("brunei darussalam","brunei",x))
+ranking_4 <- apply(ranking_4,2,function(x)gsub("united arab emirates","uae",x))
+ranking_4 <- apply(ranking_4,2,function(x)gsub("el salvador","elsalvador",x))
+ranking_4 <- apply(ranking_4,2,function(x)gsub("bosnia and herzegovina","bosnia",x))
+ranking_4 <- apply(ranking_4,2,function(x)gsub("sri lanka","srilanka",x))
+ranking_4 <- apply(ranking_4,2,function(x)gsub("lao people's democratic republic","laos",x))
 
 ranking_4 <- as_tibble(ranking_4)                     
 str(ranking_4)
 ranking_4 <- apply(ranking_4,2,function(x)gsub('\\s+', '',x))
 ranking_4 <- as_tibble(ranking_4)
 
-ranking_px <- matched_countries %>%
-  slice(1:113,115:122)
+ranking_px <- countries_7 %>%
+  select(-HDI_2018)
 
 # Match countries and ranking
 
@@ -58,6 +63,9 @@ ranking_5 <- as_tibble(ranking_5)
 ranking_6 <- bind_cols(readyData_for_correlation,ranking_5)
 ranking_6
 
+ranking_6 <- ranking_6 %>%
+  slice(1:141,143:146)
+
 # Change type of variable
 
 ranking_6 <- ranking_6 %>%
@@ -68,12 +76,9 @@ ranking_6
 ranking_6 <- ranking_6 %>%
   rename("Scimago_rank"="value")
 
-ranking_6 <- ranking_6 %>%
-  rename("Number_of_publications"="Number_of_authors")
-
 # Make plot and analyse correlation
 
-s <- ggplot(ranking_6,aes(x=Scimago_rank,y=Number_of_publications)) +geom_point() + geom_smooth() + scale_y_log10()
+s <- ggplot(ranking_6,aes(x=Scimago_rank,y=Number_of_authors)) +geom_point() + geom_smooth() + scale_y_log10()
 s
 # Save plot
 ggsave(device = "png", filename = "scimago_ranking_600_dpi.png",plot =  s,dpi = 600, 
@@ -111,7 +116,7 @@ ranking_9 <- ranking_8 %>%
 ranking_9 <- as_tibble(ranking_9)
 ranking_9
 # Save RDS data 
-saveRDS(ranking_9,"D:/Projekt_COVID/scimago_ranking_readyData.RDS")
+saveRDS(ranking_8,"D:/Projekt_COVID/scimago_ranking_readyData.RDS")
 
 # Save as excel file
-write.xlsx(ranking_9,file = "D:/Projekt_COVID/Tabels/scimago_ranking.xlsx")
+write.xlsx(ranking_8,file = "D:/Projekt_COVID/Tabels/scimago_ranking.xlsx")

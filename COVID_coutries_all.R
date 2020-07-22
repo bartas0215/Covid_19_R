@@ -8,32 +8,44 @@ library(parallel)
 library(conflicted)
 #Download data about Coronavirus COVID 19 meta analysis
 ml_query <- "COVID 19 OR novel coronavirus OR
-coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]"
+coronavirus Wuhan OR SARS-CoV-2[TIAB] AND (2019/12/31[PDAT]:2020/06/30[PDAT])"
 
 out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 5000,
-dest_dir = "D:/Projekt_COVID/COVID_Data", format = "xml")
+dest_dir = "D:/Projekt_COVID/COVID_Data_1", format = "xml")
 readLines(out1[1])[1:30]
 
+#### Retrieving data 
+
+## For each batched file ##
+
 # Load downloaded data
-mypath = "D:/Projekt_COVID/COVID_Data"
-setwd(mypath)
+mypath_5 = "D:/Projekt_COVID/COVID_Data_5"
+setwd(mypath_5)
 
 # Create list of text files
-txt_files_ls = list.files(path=mypath, pattern="*.txt") 
-
-
+txt_files_ls_5 = list.files(path=mypath_5, pattern="*.txt") 
+txt_files_ls_5
 # Save downloaded data as df regarding publication authors
-a <- table_articles_byAuth(txt_files_ls,included_authors = "all",
-     max_chars = 500,autofill = TRUE,dest_file = "D:/Projekt_COVID",getKeywords = FALSE,encoding = "UTF8")
+a5 <- table_articles_byAuth(txt_files_ls_5,included_authors = "all",
+                           max_chars = 500,autofill = TRUE,dest_file = "D:/Projekt_COVID",getKeywords = FALSE,encoding = "UTF8")
 
 # Save raw data from table_articles
-saveRDS(a,"D:/Projekt_COVID/raw_data.RDS")
+saveRDS(a5,"D:/Projekt_COVID/raw_data_5.RDS")
+
+# Bind all data frames
+raw_data_full <- do.call("rbind", list(raw_data,raw_data_1,raw_data_2,raw_data_3,raw_data_4,raw_data_5))
+saveRDS(raw_data_full,"D:/Projekt_COVID/raw_data_full.RDS")
+
+# Check number of articles
+raw_data_full %>%
+  distinct(title) %>%
+  count()
 
 # Check structure of the data 
-str(raw_data)
+str(raw_data_full)
 
 # Save df as tibble
-b <- as_tibble(raw_data)
+b <- as_tibble(raw_data_full)
 
 # Delete unnecessary columns
 c <- b %>%
@@ -56,6 +68,10 @@ s <- gsub("South Africa","Southafrica",s)
 s <- gsub("Czech Republic", "Czechrepublic",s) 
 s <- gsub("Costa Rica", "Costarica",s)
 s <- gsub("Jersey", "USA",s)
+s <- gsub("El Salvador", "ElSalvador",s)
+s <- gsub("Ivory Coast", "IvoryCoast",s)
+s <- gsub("Sri Lanka", "SriLanka",s)
+s <- gsub("	United Arab Emirates", "UAE",s)
 s
 
 # Remove punctuation
@@ -81,7 +97,12 @@ r <- gsub("New Zealand","Newzealand",r)
 r <- gsub("South Africa","Southafrica",r)
 r <- gsub("Czech Republic", "Czechrepublic",r)
 r <- gsub("Costa Rica", "Costarica",r)
-r <- gsub("Jersey", "USA",r)                              
+r <- gsub("Jersey", "USA",r) 
+r <- gsub("Bosnia and Herzegovina", "Bosnia",r) 
+r <- gsub("El Salvador", "ElSalvador",r)
+r <- gsub("Ivory Coast", "IvoryCoast",r)
+r <- gsub("Sri Lanka", "SriLanka",r)
+r <- gsub("United Arab Emirates", "UAE",r)
 r <- as_tibble(r)
 
 r                              ### Matching countries ###
@@ -127,13 +148,32 @@ m <- m %>%
   arrange(desc(freq))
 m
 
-# Delete useless data
-px <- m %>%
-  slice(c(1:120,122:123))
+## Delete useless data
 
+# Remove guadalupe
+px <- m %>%
+  slice(c(1:97,99:156))
+# Remove martinique
+px <- px %>%
+  slice(c(1:98,100:155))
+# Remove gibraltar
+px <- px %>%
+  slice(c(1:115,117:154))
+# Remove sicily
+px <- px %>%
+  slice(c(1:117,119:153))
+# Remove Somaila
+px <- px %>%
+  slice(c(1:141,143:152))
+# Remove Greenland
+px <- px %>%
+  slice(c(1:144,146:151))
+# Remove Reunion
+px <- px %>%
+  slice(c(1:148,150))
 # Rename columns
 px <- px %>% 
-  rename("Number"="freq")
+  rename("Number_of_authors"="freq")
 px <- px %>%
   rename("Country"="X..i..")
 px

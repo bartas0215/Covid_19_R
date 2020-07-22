@@ -12,7 +12,7 @@ cor_total_cases
 # Make plot for correlation
 
 cor_tc <- ggplot(final_data_covid_2,aes(x=Total_cases_perMln,y=Articles_perMln)) + geom_point() + geom_smooth() + annotate("text",x=20000, y=0.1 ,
-                                                                                                          label=paste("Rs = 0.51"), size = 10
+                                                                                                          label=paste("Rs = 0.47"), size = 10
 ) + scale_y_log10() 
 
 
@@ -31,7 +31,7 @@ cor_total_deaths
 # Make plot for correlation
 
 cor_td <- ggplot(final_data_covid_2,aes(x=Total_deaths_perMln,y=Articles_perMln)) + geom_point() + geom_smooth() + annotate("text",x=600, y=0.1, 
-                                                                                                                           label=paste("Rs = 0.48"), size = 10
+                                                                                                                           label=paste("Rs = 0.46"), size = 10
 ) + scale_y_log10() 
 
 

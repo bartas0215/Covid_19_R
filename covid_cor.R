@@ -99,6 +99,11 @@ covid_data_1 <- apply(covid_data_1,2,function(x)gsub("new zealand","newzealand",
 covid_data_1 <- apply(covid_data_1,2,function(x)gsub("south korea","southkorea",x))
 covid_data_1 <- apply(covid_data_1,2,function(x)gsub("costa rica","costarica",x))
 covid_data_1 <- apply(covid_data_1,2,function(x)gsub("czech republic","czechrepublic",x))
+covid_data_1 <- apply(covid_data_1,2,function(x)gsub("united arab emirates","uae",x))
+covid_data_1 <- apply(covid_data_1,2,function(x)gsub("sri lanka","srilanka",x))
+covid_data_1 <- apply(covid_data_1,2,function(x)gsub("bosnia and herzegovina","bosnia",x))
+
+
 
 covid_data_1
 
@@ -159,6 +164,28 @@ final_data_covid_2 <- final_data_covid_2 %>%
   mutate(Total_deaths_perMln=(Total_deaths*1e6)/Population_mln)
 
 final_data_covid_2
+
+## Tidy data
+
+# Slice el salvador and samoa 
+final_data_covid_2 <- final_data_covid_2 %>%
+  slice(1:123,125:146)
+final_data_covid_2 <- final_data_covid_2 %>%
+  slice(1:125,127:145)
+
+# Add rows
+final_data_covid_2 <- final_data_covid_2 %>%
+  add_row(Country = "samoa",Number_of_authors = 4, Population=0.20,Population_mln=200000,
+          Articles_perMln=20.00000000,HDI_2018= 0.707,Total_cases=0,Total_deaths=0,
+          Total_cases_perMln=0,Total_deaths_perMln=0)
+
+final_data_covid_2 <- final_data_covid_2 %>%
+  add_row(Country = "elsalvador",Number_of_authors = 3, Population=6.40,Population_mln=6400000,
+          Articles_perMln=0.46875000,HDI_2018= 0.667,Total_cases=0,Total_deaths=0,
+          Total_cases_perMln=0,Total_deaths_perMln=0)
+# Arrange data in order
+final_data_covid_2 <- final_data_covid_2 %>%
+  arrange(desc(Number_of_authors))
 
 # Save data
 saveRDS(final_data_covid_2,"D:/Projekt_COVID/readyData_for_correlation_covid.RDS")
