@@ -1,20 +1,24 @@
+#Load tidyverse package
+library(tidyverse)
 
 
+# Count univeristy names
 xs <- c %>%
   distinct(address)
-
 
 str_count(xs,pattern = "University of Gothenburg")
 
 
-vc <- c %>%
-  distinct(pmid) %>%
+# Count articles by PMID
+vc <- raw_data_full %>%
+  distinct(PMID) %>%
   count()
 vc
 
 
-ds <- c1 %>%
-  distinct(title,.keep_all = TRUE)
+# Count number of cooperations
+xcv <- raw_data_full %>%
+  distinct(address,.keep_all= TRUE) %>%
+  count(pmid)
+xcv
 
-ds <- raw_data_full %>%
-  pull(journal)
