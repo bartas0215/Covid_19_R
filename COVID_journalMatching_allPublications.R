@@ -4,6 +4,9 @@ library(easyPubMed)
 library(tm)
 library(plyr)
 library(xlsx)
+# If there is a conflict between packages load
+library(conflicted)
+
 #Download data about Coronavirus COVID 19 meta analysis
 ml_query <- "COVID 19 OR novel coronavirus OR
 coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]
@@ -12,7 +15,7 @@ out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 1000,
                               dest_dir = NULL, format = "xml")
 readLines(out1[1])[1:30]
 
-# Load downloaded data
+# Load downloaded data for each of five files COVID_Data_
 mypath = "D:/Projekt_COVID/COVID_Data_1"
 setwd(mypath)
 
@@ -33,14 +36,16 @@ b1 <- as_tibble(raw_data_full)
 c1 <- b1 %>%
   select(-abstract, -keywords,-email)
 c1
+
 # Distinct journal column from the rest of the tibble
 d1 <- distinct(c1,journal)
 d1
 
-d1 <- c1 %>%
+# Count number of unique titles
   distinct(title,.keep_all = TRUE) %>%
   pull(journal)
 d1 <- as_tibble(d1)
+
 # Make all letters in lowercase
 d1 <- d1  %>% 
   mutate(value = tolower(value))
@@ -102,6 +107,7 @@ sci_journal <- read.csv("D:/Projekt_COVID/scimagojr_2019.csv",
                         header = TRUE, sep = ";",stringsAsFactors = FALSE)
 sci_journal <- as_tibble(sci_journal)
 sci_journal
+
 # Check structure of the data
 glimpse(sci_journal)
 

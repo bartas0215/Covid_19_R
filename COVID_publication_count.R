@@ -50,28 +50,3 @@ coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP] AND
        Guideline[PT]")
   print(covid_querry_guide$Count)
 }, silent = TRUE)
-
-
-
-ml_query <- "COVID 19 OR novel coronavirus OR
-coronavirus Wuhan OR SARS-CoV-2[TIAB] AND 2019/12/31:2020/06/30[DP]
-        AND Meta-Analysis[PT] "
-out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 180,
-                                dest_dir = NULL, format = "xml")
-readLines(out1[1])[1:30]
-out1
-
-a <- table_articles_byAuth(out1,included_authors = "all",
-                      max_chars = 500,autofill = TRUE,dest_file = "D:/Data_R_Meta/Dane_meta.rds",getKeywords = FALSE,encoding = "UTF8")
-a
-library(tidyverse)
-str(a)
-
-
-b <- as_tibble(a)
-b
-
-
-c <- b %>%
-  select(-abstract, -keywords,-email)
-c
