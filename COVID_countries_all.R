@@ -51,7 +51,7 @@ b <- as_tibble(raw_data_full)
 c <- b %>%
   select(-abstract, -keywords,-email)
 c
-# Pull address column from the rest of the tibble
+# Distinct address column from the rest of the tibble
 d <- c %>%
   distinct(address)
 d
@@ -71,7 +71,7 @@ s <- gsub("Jersey", "USA",s)
 s <- gsub("El Salvador", "ElSalvador",s)
 s <- gsub("Ivory Coast", "IvoryCoast",s)
 s <- gsub("Sri Lanka", "SriLanka",s)
-s <- gsub("	United Arab Emirates", "UAE",s)
+s <- gsub("United Arab Emirates", "UAE",s)
 s
 
 # Remove punctuation
