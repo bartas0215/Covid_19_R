@@ -56,18 +56,17 @@ d <- c %>%
   distinct(address)
 d
 
+#####
+d1 <- c %>%
+  distinct(address,.keep_all = TRUE)
 
-#####NEW######
+d2 <- d1 %>%
+  pull(journal)
+d2 <- as_tibble(d2)
 
-de <- apply(d,2,function(x)gsub(",$","",x)
-de
+d3 <- bind_cols(d2,l3)
+#####
 
-de <- as_tibble(de)
-# Change names of some countries
-s1 <- apply(d,2,function(x)gsub("\\s", "", x))
-s2 <- apply(s1,2,function(x)gsub("[[:punct:]\n]","",x))
-s2
-################
 
 s <- gsub("United Kingdom","UK",d)
 s <- gsub("United States","USA",s)
@@ -131,13 +130,6 @@ r <- as_tibble(r)
 
 
 
-
-s3 <- r$value[match(r$value,f1)]
-
-s3 <- as_tibble(s3)
-
-s3
-
 r                              ### Matching countries ###
 
 ### Cluster data
@@ -157,64 +149,12 @@ l <- clusterApply(cluster_1,f1,function(x)x[which(toupper(x) %in% toupper(r$valu
 # Stop cluster
 stopCluster(cluster_1)
 
+
+# Unlist and tidy data
 l
-?unlist
+l2 <- unlist(lapply(l,function(x) if(identical(x,character(0))) ' ' else paste0(x,collapse=' ')))
+l3 <- as_tibble(l2)
 
+# Bind data
+d3 <- bind_cols(d2,l3)
 
-
-## Tidy outcome data 
-l1 <- do.call(rbind, lapply(l, as.data.frame))
-
-# Check data structure
-str(l)
-l1
-
-### Tidy output data
-
-# Change factor to character variable
-o <- data.frame(lapply(l, as.character), stringsAsFactors=FALSE)
-
-# Count countries
-o <- o %>%
-  mutate(X..i..=tolower(X..i..))
-m <- count(o)
-m
-
-# Arrange results in decreasing order
-m <- as_tibble(m)
-m <- m %>%
-  arrange(desc(freq))
-m
-
-## Delete useless data
-
-# Remove guadalupe
-px <- m %>%
-  slice(c(1:97,99:156))
-# Remove martinique
-px <- px %>%
-  slice(c(1:98,100:155))
-# Remove gibraltar
-px <- px %>%
-  slice(c(1:115,117:154))
-# Remove sicily
-px <- px %>%
-  slice(c(1:117,119:153))
-# Remove Somaila
-px <- px %>%
-  slice(c(1:141,143:152))
-# Remove Greenland
-px <- px %>%
-  slice(c(1:144,146:151))
-# Remove Reunion
-px <- px %>%
-  slice(c(1:148,150))
-# Rename columns
-px <- px %>% 
-  rename("Number_of_authors"="freq")
-px <- px %>%
-  rename("Country"="X..i..")
-px
-
-# Save results 
-saveRDS(px,"D:/Projekt_COVID/matched_countries.RDS")
