@@ -11,7 +11,7 @@ ml_query <- "COVID 19 OR novel coronavirus OR
 coronavirus Wuhan OR SARS-CoV-2[TIAB] AND (2019/12/31[PDAT]:2020/06/30[PDAT])"
 
 out1 <- batch_pubmed_download(pubmed_query_string = ml_query, batch_size = 5000,
-dest_dir = "D:/Projekt_COVID/COVID_Data_1", format = "xml")
+                              dest_dir = "D:/Projekt_COVID/COVID_Data_1", format = "xml")
 readLines(out1[1])[1:30]
 
 #### Retrieving data 
@@ -27,7 +27,7 @@ txt_files_ls_5 = list.files(path=mypath_5, pattern="*.txt")
 txt_files_ls_5
 # Save downloaded data as df regarding publication authors
 a5 <- table_articles_byAuth(txt_files_ls_5,included_authors = "all",
-                           max_chars = 500,autofill = TRUE,dest_file = "D:/Projekt_COVID",getKeywords = FALSE,encoding = "UTF8")
+                            max_chars = 500,autofill = TRUE,dest_file = "D:/Projekt_COVID",getKeywords = FALSE,encoding = "UTF8")
 
 # Save raw data from table_articles
 saveRDS(a5,"D:/Projekt_COVID/raw_data_5.RDS")
@@ -56,7 +56,18 @@ d <- c %>%
   distinct(address)
 d
 
+
+#####NEW######
+
+de <- apply(d,2,function(x)gsub(",$","",x)
+de
+
+de <- as_tibble(de)
 # Change names of some countries
+s1 <- apply(d,2,function(x)gsub("\\s", "", x))
+s2 <- apply(s1,2,function(x)gsub("[[:punct:]\n]","",x))
+s2
+################
 
 s <- gsub("United Kingdom","UK",d)
 s <- gsub("United States","USA",s)
@@ -74,12 +85,22 @@ s <- gsub("Sri Lanka", "SriLanka",s)
 s <- gsub("United Arab Emirates", "UAE",s)
 s
 
+s1 <- as_tibble(s)
+s1
+
+
 # Remove punctuation
 e <- gsub("[[:punct:]\n]","",s)
 e
+
+e1 <- apply(s,2,function(x)gsub("[[:punct:]\n]","", x))
+e1
+
+
+
 # Split data at word boundaries
-f <- strsplit(e, " ")
-f
+f1 <- strsplit(e1, " ")
+f1
 
 ### Prepare world.cities for analysis
 
@@ -89,6 +110,9 @@ data("world.cities")
 # Pull country.etc from world.cities
 r <- world.cities %>%
   pull(country.etc)
+
+r
+#####NEW####
 
 # Change names of some countries
 r <- gsub("Korea South","Southkorea",r)
@@ -105,6 +129,15 @@ r <- gsub("Sri Lanka", "SriLanka",r)
 r <- gsub("United Arab Emirates", "UAE",r)
 r <- as_tibble(r)
 
+
+
+
+s3 <- r$value[match(r$value,f1)]
+
+s3 <- as_tibble(s3)
+
+s3
+
 r                              ### Matching countries ###
 
 ### Cluster data
@@ -119,17 +152,22 @@ cluster_1 <- makeCluster(3)
 clusterExport(cluster_1,"r")
 
 # Apply function
-l <- clusterApply(cluster_1,f,function(x)x[which(toupper(x) %in% toupper(r$value))])
+l <- clusterApply(cluster_1,f1,function(x)x[which(toupper(x) %in% toupper(r$value))])
 
 # Stop cluster
 stopCluster(cluster_1)
 
+l
+?unlist
+
+
+
 ## Tidy outcome data 
-l <- do.call(rbind, lapply(l, as.data.frame))
+l1 <- do.call(rbind, lapply(l, as.data.frame))
 
 # Check data structure
 str(l)
-l
+l1
 
 ### Tidy output data
 
@@ -138,7 +176,7 @@ o <- data.frame(lapply(l, as.character), stringsAsFactors=FALSE)
 
 # Count countries
 o <- o %>%
- mutate(X..i..=tolower(X..i..))
+  mutate(X..i..=tolower(X..i..))
 m <- count(o)
 m
 
@@ -180,4 +218,3 @@ px
 
 # Save results 
 saveRDS(px,"D:/Projekt_COVID/matched_countries.RDS")
-
