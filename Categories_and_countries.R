@@ -64,7 +64,7 @@ d2 <- d1 %>%
   pull(journal)
 d2 <- as_tibble(d2)
 
-d3 <- bind_cols(d2,l3)
+
 #####
 
 
@@ -158,3 +158,76 @@ l3 <- as_tibble(l2)
 # Bind data
 d3 <- bind_cols(d2,l3)
 
+# Correction of duplicated data
+d4 <- sapply(strsplit(as.character(d3$value1), split="\\s+"), function(x) {
+  paste(unique(trimws(x)), collapse = ', ') } )
+d4 <- as_tibble(d4)
+
+# Bind data again
+d5 <- bind_cols(d2,d4)
+
+#### Match journals to their respective categories (sci_journal_13) 
+
+# Prepare data 
+
+# Remove all data in parenthesis
+q2 <- apply(d2,2,function(x)gsub("\\s*\\([^\\)]+\\)","",x))
+
+# Remove all data after colon
+q2 <- apply(q2,2,function(x)gsub(":.*","",x))
+
+# Remove commas
+q2 <- apply(q2,2,function(x)gsub(",","",x))
+
+# Remove equal sign 
+q2 <- apply(q2,2,function(x)gsub("=","",x))
+
+# Change &amp; to and
+q2 <- apply(q2,2,function(x)gsub("&amp;", "and", x))
+
+# Remove the from text 
+q2 <- apply(q2,2,function(x)gsub("the", "", x))
+
+# Remove whitespace
+q2 <- apply(q2,2,function(x)gsub('\\s+', '',x))
+q2 <- apply(q2,2,function(x)gsub(' +',' ',x))
+
+# Save as tibble
+q2 <- as_tibble(q2)
+
+# Remove punctuation from journal column and make tibble again 
+e2 <- q2$value %>%
+  removePunctuation()
+e2
+e2 <- as_tibble(e2)
+e2
+
+# Lower letters in journal column
+glimpse(e2)
+f2 <- e2 %>%
+  mutate(value =tolower(value))
+
+
+### Matching data
+
+con_1 <- sci_journal_13$Categories[match(f2$value,sci_journal_13$Title)]
+con_1 <- as_tibble(con_1)
+
+# Bind columns
+d6 <- bind_cols(con_1,d4)
+
+# Rename columns
+d7 <- d6 %>%
+  rename("Category"="value")
+
+d7 <- d7 %>%
+  rename("Country"="value1")
+
+# Count countries on basis of categories
+d8 <- d7 %>%
+  group_by(Country) %>%
+  count(Category)
+
+
+# Save data
+saveRDS(d7,"D:/Projekt_COVID/countries_categories_ready" )
