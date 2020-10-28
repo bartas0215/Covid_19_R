@@ -36,10 +36,14 @@ server <- function(input, output) {
   
   output$table <- renderReactable({reactable(zz())})
   
-  output$dowload <- downloadHandler(filename = "data.csv", content = function(file){
-    write.csv(output$table,file)
-    
-  })
+  output$download <- downloadHandler(
+    filename = "data.csv",
+    content = function(file) {
+      
+      data <- zz()
+      write.csv(data, file, row.names = FALSE)
+    })
+  
   
 }
 shinyApp(ui= ui, server = server)
