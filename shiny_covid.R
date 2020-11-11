@@ -5,6 +5,7 @@ library(plotly)
 library(ggrepel)
 library(leaflet)
 library(wordcloud2)
+library(shinydashboard)
 
 
 ui <- fluidPage(
@@ -15,7 +16,7 @@ ui <- fluidPage(
   ,
   mainPanel(tabsetPanel(tabPanel("Plot-Total cases",
     plotOutput("country")),tabPanel("Table",DT::dataTableOutput("table")),tabPanel("Map",leafletOutput(
-      "map", height = '500px', width = '100%')),tabPanel("Journals_cloud",wordcloud2Output(outputId = "cloud")))))
+      "map", height = '500px', width = '100%')),tabPanel("Journals_category_cloud",wordcloud2Output(outputId = "cloud")))))
   
 
   
@@ -23,10 +24,22 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   
-  px
-  px_1 <- as.data.frame(px)
-  px_1
+ sci_1 <- data.frame(word = names(scimago_categories_readyData),freq=scimago_categories_readyData)            
+ 
+ sci_2 <- sci_1 %>%
+   select(-word)
+ sci_2
+ sci_2 <- as_tibble(sci_2)
+ 
+ sci_3 <- sci_2 %>%
+   rename(word=freq.Categories)
+ 
+ sci_3 <- sci_3 %>%
+   rename(freq = freq.Number)
+ 
+   
   
+    
  
   zz <- reactive({subset(readyData_for_correlation_covid, Country %in% input$country)}) 
  
@@ -52,10 +65,11 @@ server <- function(input, output) {
       addTiles()
   })
   
-  output$cloud <- renderWordcloud2({px_1})
+  output$cloud <- renderWordcloud2({
+   
+    wordcloud2(sci_3, backgroundColor = "white")
+  })
   
 }
 shinyApp(ui= ui, server = server)
-
-
 
